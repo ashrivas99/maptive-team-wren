@@ -1,0 +1,4616 @@
+[{
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=19",
+    "question": "Pictures to represent numbers"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=22",
+    "question": "Write numbers to 100"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=23",
+    "question": "Read the number words to ten"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=29",
+    "question": "Count by tens"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=30",
+    "question": "Adjacent whole numbers"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=31",
+    "question": "Numbers before, after or between"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=32",
+    "question": "Compare two whole numbers"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=33",
+    "question": "Use first to twentieth"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=40",
+    "question": "Number collections to 10"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=43",
+    "question": "Skip count by 10's"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=44",
+    "question": "Skip count by 5's"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=45",
+    "question": "Skip count by 2's"
+}, {
+    "difficulty": 1,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=1026",
+    "question": "Skip count multiples of 10"
+}, {
+    "difficulty": 1,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=28",
+    "question": "Commutative property of addition"
+}, {
+    "difficulty": 1,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=34",
+    "question": "Addition word problems"
+}, {
+    "difficulty": 1,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=35",
+    "question": "Addition number sentences"
+}, {
+    "difficulty": 1,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=37",
+    "question": "Simple addition problems"
+}, {
+    "difficulty": 1,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=38",
+    "question": "Addition to 10"
+}, {
+    "difficulty": 1,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=39",
+    "question": "Add to get the same whole"
+}, {
+    "difficulty": 1,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=766",
+    "question": "Subtraction word problems"
+}, {
+    "difficulty": 1,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=767",
+    "question": "Subtraction number sentences"
+}, {
+    "difficulty": 1,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=768",
+    "question": "Simple subtraction problems"
+}, {
+    "difficulty": 1,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=769",
+    "question": "Subtraction to 10"
+}, {
+    "difficulty": 1,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=21",
+    "question": "Arrange objects in size order"
+}, {
+    "difficulty": 1,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=24",
+    "question": "Place value"
+}, {
+    "difficulty": 1,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=25",
+    "question": "Order numbers to 20"
+}, {
+    "difficulty": 1,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=26",
+    "question": "Base 10 system"
+}, {
+    "difficulty": 1,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=27",
+    "question": "Compose and decompose one-digit numbers"
+}, {
+    "difficulty": 1,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=909",
+    "question": "Numbers, numerals and digits"
+}, {
+    "difficulty": 1,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=9",
+    "question": "Use non-standard units to estimate measurements"
+}, {
+    "difficulty": 1,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=10",
+    "question": "Use non-standard units to measure lengths"
+}, {
+    "difficulty": 1,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=8",
+    "question": "Months and seasons"
+}, {
+    "difficulty": 1,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=15",
+    "question": "Know times of the day"
+}, {
+    "difficulty": 1,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=16",
+    "question": "Tell time - hours"
+}, {
+    "difficulty": 1,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=17",
+    "question": "Days and months"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=2",
+    "question": " Congruency"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=4",
+    "question": "Slides, flips & turns"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=5",
+    "question": "Symmetry"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=765",
+    "question": "Know two-dimensional shapes"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=837",
+    "question": "Up, Down, Left, Right"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=3",
+    "question": "Three-dimensional shapes"
+}, {
+    "difficulty": 1,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=6",
+    "question": "Recognize 3D shapes"
+}, {
+    "difficulty": 1,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=1",
+    "question": "Patterns in arithmetic"
+}, {
+    "difficulty": 1,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=36",
+    "question": "Number sentences"
+}, {
+    "difficulty": 1,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=49",
+    "question": "Collect and record data"
+}, {
+    "difficulty": 1,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=50",
+    "question": "Draw bar graphs"
+}, {
+    "difficulty": 1,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=51",
+    "question": "Venn diagrams"
+}, {
+    "difficulty": 1,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=52",
+    "question": "Interpret: most, least, >, < and = "
+}, {
+    "difficulty": 1,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=53",
+    "question": "Understanding simple pictographs"
+}, {
+    "difficulty": 1,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=55",
+    "question": "Construct questions from data graphs"
+}, {
+    "difficulty": 1,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=41",
+    "question": "Estimate the number in a collection to 50"
+}, {
+    "difficulty": 1,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=54",
+    "question": "Likely and unlikely"
+}, {
+    "difficulty": 1,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=12",
+    "question": "Coins"
+}, {
+    "difficulty": 1,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=13",
+    "question": "Cent notation"
+}, {
+    "difficulty": 1,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=14",
+    "question": "Combine coins to 25c"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=74",
+    "question": "Skip count by 2s, 5s and 10s"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=84",
+    "question": "Skip count backwards in 1's, 5's or 10's"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=88",
+    "question": "Skip count by 3's to 36"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=89",
+    "question": "Skip count by 4's to 48"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=94",
+    "question": "The number before, after or between given number(s)"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=1027",
+    "question": "Skip count by 3's to 99"
+}, {
+    "difficulty": 2,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=1028",
+    "question": "Skip count by 4's to 100"
+}, {
+    "difficulty": 2,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=79",
+    "question": "Addition number sentences"
+}, {
+    "difficulty": 2,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=80",
+    "question": "Add 1 and 2 digit numbers"
+}, {
+    "difficulty": 2,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=81",
+    "question": "Add numbers to 18"
+}, {
+    "difficulty": 2,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=82",
+    "question": "Use doubling to add 2-digit numbers"
+}, {
+    "difficulty": 2,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=83",
+    "question": "Use compensation to add 2-digit numbers"
+}, {
+    "difficulty": 2,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=93",
+    "question": "Commutative property of addition"
+}, {
+    "difficulty": 2,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=770",
+    "question": "Subtract 1 and 2 digit numbers"
+}, {
+    "difficulty": 2,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=771",
+    "question": "Subtraction number sentences"
+}, {
+    "difficulty": 2,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=775",
+    "question": "Subtraction to 18"
+}, {
+    "difficulty": 2,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=85",
+    "question": "Multiplication as repeated addition"
+}, {
+    "difficulty": 2,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=86",
+    "question": "Fair sharing"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=75",
+    "question": "Read first to ninth"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=77",
+    "question": "Zero in place value system"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=78",
+    "question": "Even and odd numbers"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=90",
+    "question": "Order numbers to 100"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=91",
+    "question": "The base 10 system"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=92",
+    "question": "2-digit numbers"
+}, {
+    "difficulty": 2,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=100",
+    "question": "Use ordinal numbers"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=64",
+    "question": "Measure using non-standard and standard metric units"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=65",
+    "question": "Estimate lengths (metric)"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=66",
+    "question": "Measure metric lengths"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=67",
+    "question": "Order metric lengths and distances"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=68",
+    "question": "Compare mass (metric)"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=69",
+    "question": "Compare and order objects (Metric mass)"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=839",
+    "question": "North, south, east and west"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1038",
+    "question": "Measure using non-standard and standard US units"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1039",
+    "question": "Estimate lengths (US)"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1040",
+    "question": "Measure US lengths"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1184",
+    "question": "Order US lengths and distances"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1185",
+    "question": "Compare mass (US)"
+}, {
+    "difficulty": 2,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1186",
+    "question": "Compare and order objects (US mass)"
+}, {
+    "difficulty": 2,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=73",
+    "question": "Tell time to the half hour and 5 minutes"
+}, {
+    "difficulty": 2,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=58",
+    "question": "Experiment with slides, flips, and turns"
+}, {
+    "difficulty": 2,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=59",
+    "question": "Common 2D shapes"
+}, {
+    "difficulty": 2,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=60",
+    "question": "Compose and decompose 2D shapes"
+}, {
+    "difficulty": 2,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=61",
+    "question": "Group objects by like properties"
+}, {
+    "difficulty": 2,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=62",
+    "question": "Predict outcome of slides, flips and turns"
+}, {
+    "difficulty": 2,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=63",
+    "question": "Line symmetry"
+}, {
+    "difficulty": 2,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=56",
+    "question": "Compare using <, > and = (to 100)"
+}, {
+    "difficulty": 2,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=57",
+    "question": "Describe and extend patterns"
+}, {
+    "difficulty": 2,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=96",
+    "question": "Tallying"
+}, {
+    "difficulty": 2,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=99",
+    "question": "Read data graphs"
+}, {
+    "difficulty": 2,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=87",
+    "question": "Estimate the number in a collection to 100, and check."
+}, {
+    "difficulty": 2,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=70",
+    "question": "Coins and bills"
+}, {
+    "difficulty": 2,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=71",
+    "question": "Dollar notation"
+}, {
+    "difficulty": 2,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=72",
+    "question": "What makes one dollar"
+}, {
+    "difficulty": 3,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=118",
+    "question": "Skip count by 25's, 50's, 100's"
+}, {
+    "difficulty": 3,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=127",
+    "question": "Add 3-digit numbers"
+}, {
+    "difficulty": 3,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=141",
+    "question": "Commutative property of addition"
+}, {
+    "difficulty": 3,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=144",
+    "question": "Associative property of addition"
+}, {
+    "difficulty": 3,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=777",
+    "question": "Subtract three digit numbers"
+}, {
+    "difficulty": 3,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=128",
+    "question": "Multiplication: 2x, 3x, 4x, 5x, 10x"
+}, {
+    "difficulty": 3,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=130",
+    "question": "Multiplication to 12 x 12"
+}, {
+    "difficulty": 3,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=131",
+    "question": "Meaning for multiplication"
+}, {
+    "difficulty": 3,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=143",
+    "question": "Multiplication by zero"
+}, {
+    "difficulty": 3,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=776",
+    "question": "Commutative property of multiplication"
+}, {
+    "difficulty": 3,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=132",
+    "question": "Single figure division"
+}, {
+    "difficulty": 3,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=133",
+    "question": "Meaning for division"
+}, {
+    "difficulty": 3,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=125",
+    "question": "Odd and even"
+}, {
+    "difficulty": 3,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=126",
+    "question": "Add or subtract odd/even numbers"
+}, {
+    "difficulty": 3,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=129",
+    "question": "Read and write whole numbers to 1,000"
+}, {
+    "difficulty": 3,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=138",
+    "question": "Order numbers to 1,000"
+}, {
+    "difficulty": 3,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=139",
+    "question": "Place value to thousands"
+}, {
+    "difficulty": 3,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=140",
+    "question": "Compose and decompose 3-digit numbers"
+}, {
+    "difficulty": 3,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=119",
+    "question": "Fractions as part of a whole"
+}, {
+    "difficulty": 3,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=120",
+    "question": "Represent unit fractions"
+}, {
+    "difficulty": 3,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=121",
+    "question": "Numerator and denominator"
+}, {
+    "difficulty": 3,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=122",
+    "question": "Fractions as equal parts of a whole"
+}, {
+    "difficulty": 3,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=123",
+    "question": "Equivalent fractions (1/2, 1/3, 1/4)"
+}, {
+    "difficulty": 3,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=124",
+    "question": "Compare unit fractions (1/2, 1/3, 1/4)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=108",
+    "question": "Length tools and units (metric)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=109",
+    "question": "Estimate lengths (metric)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=110",
+    "question": "Measure length in centimeters"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=111",
+    "question": "Weigh objects (grams or kilograms)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=113",
+    "question": "Compare metric capacities (more/less)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=114",
+    "question": "Measure capacity (metric)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1001",
+    "question": "Other compass directions"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1036",
+    "question": "Weigh objects (ounces or pounds)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1041",
+    "question": "Length tools and units (US)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1042",
+    "question": "Estimate lengths (US)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1043",
+    "question": "Measure length in inches"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1044",
+    "question": "Measure capacity (US)"
+}, {
+    "difficulty": 3,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1201",
+    "question": "Compare US standard capacities (more/less)"
+}, {
+    "difficulty": 3,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=116",
+    "question": "Fractions on a clock face"
+}, {
+    "difficulty": 3,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=117",
+    "question": "Tell time: minutes"
+}, {
+    "difficulty": 3,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=103",
+    "question": "2D Shapes Terminology"
+}, {
+    "difficulty": 3,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=104",
+    "question": "Congruent and similar figures"
+}, {
+    "difficulty": 3,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=107",
+    "question": "Lines of symmetry"
+}, {
+    "difficulty": 3,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=105",
+    "question": "Common 3D solids"
+}, {
+    "difficulty": 3,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=106",
+    "question": "Faces of 3D solids"
+}, {
+    "difficulty": 3,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1120",
+    "question": "Three dimensions"
+}, {
+    "difficulty": 3,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=101",
+    "question": "Inequalities, including unit fractions"
+}, {
+    "difficulty": 3,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=102",
+    "question": "Numeric and geometric patterns"
+}, {
+    "difficulty": 3,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=134",
+    "question": "Strategies in problem solving"
+}, {
+    "difficulty": 3,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=147",
+    "question": "Construct a frequency table"
+}, {
+    "difficulty": 3,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=149",
+    "question": "[Display data in pictographs and bar graphs]"
+}, {
+    "difficulty": 3,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=151",
+    "question": "Read simple pictographs and bar graphs"
+}, {
+    "difficulty": 3,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=152",
+    "question": "Conclusions & predictions from data graphs"
+}, {
+    "difficulty": 3,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=135",
+    "question": "Estimate numbers up to 500"
+}, {
+    "difficulty": 3,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=136",
+    "question": "When to round?"
+}, {
+    "difficulty": 3,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=137",
+    "question": "Use estimation"
+}, {
+    "difficulty": 3,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=115",
+    "question": "Count coins and dollars"
+}, {
+    "difficulty": 4,
+    "category": "Counting",
+    "skillno": "quiz-create.php?t=skill&skillno=176",
+    "question": "Skip count by 1,000's"
+}, {
+    "difficulty": 4,
+    "category": "Addition",
+    "skillno": "quiz-create.php?t=skill&skillno=181",
+    "question": "Add numbers to 10,000"
+}, {
+    "difficulty": 4,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=780",
+    "question": "Subtract 4 digit numbers"
+}, {
+    "difficulty": 4,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=183",
+    "question": "Understand multiplication"
+}, {
+    "difficulty": 4,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=185",
+    "question": "Multiply 2 digits by 1 digit"
+}, {
+    "difficulty": 4,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=186",
+    "question": "Multiply 2 digits by 2 digits"
+}, {
+    "difficulty": 4,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=188",
+    "question": "Multiply by 10, 100 or 1,000"
+}, {
+    "difficulty": 4,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=199",
+    "question": "The associative property of multiplication"
+}, {
+    "difficulty": 4,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=834",
+    "question": "Multiplication up to 10x"
+}, {
+    "difficulty": 4,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=184",
+    "question": "Multiplication and division as inverses"
+}, {
+    "difficulty": 4,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=189",
+    "question": "Divide 2 digit nos by 1 digits nos"
+}, {
+    "difficulty": 4,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=190",
+    "question": "Remainders"
+}, {
+    "difficulty": 4,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=781",
+    "question": "Meanings of division"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=180",
+    "question": "Multiplying odd/even numbers"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=187",
+    "question": "Numbers to ten thousand"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=194",
+    "question": "Round to tens or hundreds"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=196",
+    "question": "Order numbers to 10,000"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=197",
+    "question": "Place value to 10,000"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=198",
+    "question": "Decompose and compose four digit numbers"
+}, {
+    "difficulty": 4,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1008",
+    "question": "Round to a whole number"
+}, {
+    "difficulty": 4,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=177",
+    "question": "Decimals as part of a whole"
+}, {
+    "difficulty": 4,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=193",
+    "question": "Add/subtract decimals to hundredths"
+}, {
+    "difficulty": 4,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=971",
+    "question": "Base 10 place value (decimals)"
+}, {
+    "difficulty": 4,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=191",
+    "question": "Add/subtract fractions (same denominator) "
+}, {
+    "difficulty": 4,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=192",
+    "question": "Convert decimals to fractions"
+}, {
+    "difficulty": 4,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=200",
+    "question": "Fractions on the number line and as divisions of whole numbers"
+}, {
+    "difficulty": 4,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=201",
+    "question": "Simple equivalent fractions"
+}, {
+    "difficulty": 4,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=202",
+    "question": "Compare and order simple fractions"
+}, {
+    "difficulty": 4,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=999",
+    "question": "Proper, improper and mixed fractions"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=166",
+    "question": "Units of length (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=168",
+    "question": "Measure length to the nearest unit (cm or m)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=169",
+    "question": "Equivalent units of length (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=170",
+    "question": "Units of mass (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=171",
+    "question": "Measure mass using grams"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=172",
+    "question": "Units of capacity (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=173",
+    "question": "Measure capacity (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1002",
+    "question": "Temperature - tools and units"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1003",
+    "question": "Units of area (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1004",
+    "question": "Units of volume (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1005",
+    "question": "Units of speed (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1006",
+    "question": "Equivalent units of mass (metric)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1045",
+    "question": "Units of length (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1046",
+    "question": "Measure length to the nearest unit (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1047",
+    "question": "Equivalent units of length (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1048",
+    "question": "Units of mass (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1049",
+    "question": "Measure mass using ounces"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1050",
+    "question": "Units of capacity (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1051",
+    "question": "Measure capacity (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1052",
+    "question": "Units of area (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1053",
+    "question": "Units of volume (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1054",
+    "question": "Units of speed (US)"
+}, {
+    "difficulty": 4,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1055",
+    "question": "Equivalent units of mass (US)"
+}, {
+    "difficulty": 4,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=167",
+    "question": "Elapsed days & weeks"
+}, {
+    "difficulty": 4,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=175",
+    "question": "Elapsed hours & half hours"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=158",
+    "question": "Polygons"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=159",
+    "question": "Points and line segments"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=160",
+    "question": "Perimeter of a polygon"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=161",
+    "question": "Area of a rectangle by counting squares"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=163",
+    "question": "Perpendicular, and parallel lines and planes."
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=164",
+    "question": "Angle naming"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=165",
+    "question": "Classify angles"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=162",
+    "question": "Identify vertices, faces, and edges"
+}, {
+    "difficulty": 4,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1000",
+    "question": "Count edges, vertices and faces"
+}, {
+    "difficulty": 4,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=153",
+    "question": "Open sentences"
+}, {
+    "difficulty": 4,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=154",
+    "question": "Inequalities, including decimals"
+}, {
+    "difficulty": 4,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=155",
+    "question": "Open sentence true?"
+}, {
+    "difficulty": 4,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=156",
+    "question": "Generalizations about patterns"
+}, {
+    "difficulty": 4,
+    "category": "Pre-Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=157",
+    "question": "Analyze a pattern and state the rule"
+}, {
+    "difficulty": 4,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=205",
+    "question": "Tables, bar and pictographs"
+}, {
+    "difficulty": 4,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=206",
+    "question": "Read line graphs"
+}, {
+    "difficulty": 4,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=208",
+    "question": "Analyze graphs"
+}, {
+    "difficulty": 4,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=816",
+    "question": "Accuracy and precision"
+}, {
+    "difficulty": 4,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=195",
+    "question": "Estimation"
+}, {
+    "difficulty": 4,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=174",
+    "question": "Money change"
+}, {
+    "difficulty": 4,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=178",
+    "question": "Decimals for money"
+}, {
+    "difficulty": 4,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=179",
+    "question": "Order decimals (less than 1) to the hundredths place"
+}, {
+    "difficulty": 4,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=1007",
+    "question": "Decimal x a whole number"
+}, {
+    "difficulty": 4,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=1088",
+    "question": "Total cost"
+}, {
+    "difficulty": 5,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=249",
+    "question": "Multiply 3 digits by 3 digits"
+}, {
+    "difficulty": 5,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=832",
+    "question": "Multiply by negatives"
+}, {
+    "difficulty": 5,
+    "category": "Multiplication",
+    "skillno": "quiz-create.php?t=skill&skillno=835",
+    "question": "Multiplication to 12x"
+}, {
+    "difficulty": 5,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=250",
+    "question": "Divide 3 or 4 digit nos by 1 or 2 digit nos"
+}, {
+    "difficulty": 5,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=873",
+    "question": "Divisibility rules"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=242",
+    "question": "Numbers to millions"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=245",
+    "question": "Prime and composite"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=246",
+    "question": "Multiples and LCM"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=247",
+    "question": "Factors"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=248",
+    "question": "Factors and GCF"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=251",
+    "question": "Order of operations"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=253",
+    "question": "Compare and order numbers to millions"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=258",
+    "question": "Round numbers"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=262",
+    "question": "Place value to millions"
+}, {
+    "difficulty": 5,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1111",
+    "question": "Factors and multiples"
+}, {
+    "difficulty": 5,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=243",
+    "question": "Compare decimals"
+}, {
+    "difficulty": 5,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=257",
+    "question": "Add, subtract, multiply, and divide decimals"
+}, {
+    "difficulty": 5,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=267",
+    "question": "Read, write, and order decimals"
+}, {
+    "difficulty": 5,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=1020",
+    "question": "Percents to decimals"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=252",
+    "question": "Simplify fractions"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=254",
+    "question": "Convert between improper and mixed fractions"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=255",
+    "question": "Add/subtract fractions (like denominators) "
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=256",
+    "question": "Add/subtract mixed numbers (like denominators) "
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=259",
+    "question": "[Estimate sums and differences of fractions with unlike denominators.]"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=263",
+    "question": "Equivalent fractions"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=264",
+    "question": "Order fractions"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=268",
+    "question": "Compare fractions"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=867",
+    "question": "Calculations with decimal fractions"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=991",
+    "question": "Divide a fraction by a whole number"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=1009",
+    "question": "Fraction times whole no"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=1018",
+    "question": "Convert decimals to fractions (thousandths etc)"
+}, {
+    "difficulty": 5,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=1019",
+    "question": "Percents to fractions"
+}, {
+    "difficulty": 5,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=244",
+    "question": "Percents as part of 100"
+}, {
+    "difficulty": 5,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=1013",
+    "question": "Fractions or decimals to percents"
+}, {
+    "difficulty": 5,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=265",
+    "question": "Ratios"
+}, {
+    "difficulty": 5,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=266",
+    "question": "Ratios in different forms"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=231",
+    "question": "Measure length (cm or mm)"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=232",
+    "question": "Metric units of length"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=234",
+    "question": "Equivalent units of length (metric)"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=237",
+    "question": "Convert lengths (metric)"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=238",
+    "question": "Measure to precision"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=240",
+    "question": "Use a protractor"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=831",
+    "question": "Understand Temperature"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1011",
+    "question": "Celsius and Fahrenheit"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1056",
+    "question": "Measure length (US)"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1057",
+    "question": "US standard units of length"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1058",
+    "question": "Equivalent units of length (US)"
+}, {
+    "difficulty": 5,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1059",
+    "question": "Convert lengths (US)"
+}, {
+    "difficulty": 5,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=239",
+    "question": "Elapsed time"
+}, {
+    "difficulty": 5,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=1014",
+    "question": "Convert times"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=214",
+    "question": "Perimeter"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=217",
+    "question": "Perimeter of polygons"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=218",
+    "question": "Corresponding parts of congruent triangles"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=219",
+    "question": "Lines of symmetry of basic shapes"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=221",
+    "question": "Plot points to form geometric shapes"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=222",
+    "question": "Perimeter using coordinate plane"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=223",
+    "question": "Similar shapes"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=224",
+    "question": "Ratio of sides of similar triangles"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=225",
+    "question": "Classify quadrilaterals"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=226",
+    "question": "Angles of quadrilateral"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=227",
+    "question": "Classify triangles"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=228",
+    "question": "Sum of angles of a triangle"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=229",
+    "question": "Missing angle of a triangle"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=230",
+    "question": "Congruent shapes"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=869",
+    "question": "Angle multiples of 90 degrees"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=973",
+    "question": "Rotational symmetry"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=979",
+    "question": "Non-regular polygons"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1010",
+    "question": "Point symmetry"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1021",
+    "question": "Adjacent angles"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=817",
+    "question": "Platonic solids"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=861",
+    "question": "Nets of solids"
+}, {
+    "difficulty": 5,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1031",
+    "question": "Polyhedrons"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=209",
+    "question": "Algebraic terminology"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=210",
+    "question": "Verbal to algebra"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=211",
+    "question": "Substitute and evaluate simple expressions"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=212",
+    "question": "One step equations using basic facts"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=213",
+    "question": "One step equations using inverse operations"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=215",
+    "question": "Algebraic patterns"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=216",
+    "question": "Algebraic or geometric patterns"
+}, {
+    "difficulty": 5,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=910",
+    "question": "Open and closed sentences"
+}, {
+    "difficulty": 5,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=220",
+    "question": "Points in first quadrant"
+}, {
+    "difficulty": 5,
+    "category": "Logic",
+    "skillno": "quiz-create.php?t=skill&skillno=1034",
+    "question": "Logical reasoning"
+}, {
+    "difficulty": 5,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=271",
+    "question": "Calculate mean"
+}, {
+    "difficulty": 5,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=272",
+    "question": "Analyze graphs"
+}, {
+    "difficulty": 5,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=233",
+    "question": "Estimation"
+}, {
+    "difficulty": 5,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=260",
+    "question": "Estimate calculations with decimals"
+}, {
+    "difficulty": 5,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=261",
+    "question": "[Justify the reasonableness of answers using estimation]"
+}, {
+    "difficulty": 5,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=273",
+    "question": "Probability outcomes"
+}, {
+    "difficulty": 5,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=274",
+    "question": "Fractions as probabilities"
+}, {
+    "difficulty": 5,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=275",
+    "question": "Probability of a single event"
+}, {
+    "difficulty": 5,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1015",
+    "question": "Probability line"
+}, {
+    "difficulty": 6,
+    "category": "Subtraction",
+    "skillno": "quiz-create.php?t=skill&skillno=949",
+    "question": "Subtraction by addition"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=302",
+    "question": "Whole numbers to trillions"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=306",
+    "question": "Absolute value"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=307",
+    "question": "Rational numbers on number line"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=308",
+    "question": "Order rational numbers"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=313",
+    "question": "Commutative and associative laws"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=316",
+    "question": "Order of operations"
+}, {
+    "difficulty": 6,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=322",
+    "question": "Distributive law"
+}, {
+    "difficulty": 6,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=314",
+    "question": "Fractions to decimals"
+}, {
+    "difficulty": 6,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=1029",
+    "question": "Add, subtract, multiply, and divide decimals to millionths"
+}, {
+    "difficulty": 6,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=309",
+    "question": "Add/subtract fractions"
+}, {
+    "difficulty": 6,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=310",
+    "question": "Multiply/divide fractions"
+}, {
+    "difficulty": 6,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=311",
+    "question": "Multiply/divide mixed fractions"
+}, {
+    "difficulty": 6,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=312",
+    "question": "Reciprocal"
+}, {
+    "difficulty": 6,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=315",
+    "question": "Representations of rational numbers"
+}, {
+    "difficulty": 6,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=304",
+    "question": "Percents 0% to 100%"
+}, {
+    "difficulty": 6,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=305",
+    "question": "Solve percent problems"
+}, {
+    "difficulty": 6,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=280",
+    "question": "Proportions"
+}, {
+    "difficulty": 6,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=303",
+    "question": "Product of the means equals the product of the extremes"
+}, {
+    "difficulty": 6,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=325",
+    "question": "Ratios"
+}, {
+    "difficulty": 6,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=326",
+    "question": "Equivalent ratios as a proportion"
+}, {
+    "difficulty": 6,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=328",
+    "question": "Solve proportions using equivalent fractions"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=293",
+    "question": "Capacity and volume of a rectangular prism (metric)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=294",
+    "question": "Units of capacity (metric)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=295",
+    "question": "Equivalent units of capacity (metric)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=298",
+    "question": "Measure capacity to precision (metric)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=301",
+    "question": "Capacity (metric units)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=820",
+    "question": "Conversion of measurements (metric)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1012",
+    "question": "Convert temperatures"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1060",
+    "question": "Units of capacity (US)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1061",
+    "question": "Equivalent units of capacity (US)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1062",
+    "question": "Measure capacity to precision (US)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1063",
+    "question": "Capacity (US standard units)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1182",
+    "question": "Capacity and volume of a rectangular prism (US)"
+}, {
+    "difficulty": 6,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1183",
+    "question": "Conversion of measurements (US)"
+}, {
+    "difficulty": 6,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=819",
+    "question": "Leap years"
+}, {
+    "difficulty": 6,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=821",
+    "question": "Understand AD and BC"
+}, {
+    "difficulty": 6,
+    "category": "Time",
+    "skillno": "quiz-create.php?t=skill&skillno=952",
+    "question": "24 hour clock"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=282",
+    "question": "Proportional reasoning"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=284",
+    "question": "Calculate rectilinear areas using coordinates "
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=285",
+    "question": "Areas of triangles and quadrilaterals"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=286",
+    "question": "Areas of polygons"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=288",
+    "question": "Circle parts"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=289",
+    "question": " Circle d = 2r"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=290",
+    "question": "Circle area & circumference "
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=291",
+    "question": "Circle sector area"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=292",
+    "question": "Circumference vs Diameter of a circle"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=976",
+    "question": "Ellipse area"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1194",
+    "question": "International paper sizes"
+}, {
+    "difficulty": 6,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=287",
+    "question": "Volume of a rectangular prism "
+}, {
+    "difficulty": 6,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=277",
+    "question": "Substitute into algebraic expressions"
+}, {
+    "difficulty": 6,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=279",
+    "question": "Two step linear equations"
+}, {
+    "difficulty": 6,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=281",
+    "question": "Evaluate formulas"
+}, {
+    "difficulty": 6,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=317",
+    "question": "Repeated multiplication in exponential form"
+}, {
+    "difficulty": 6,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=318",
+    "question": "Exponents as repeated multiplication"
+}, {
+    "difficulty": 6,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=319",
+    "question": "Evaluate exponents (1,2 or 3)"
+}, {
+    "difficulty": 6,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=283",
+    "question": "Points in 4 quadrants"
+}, {
+    "difficulty": 6,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=276",
+    "question": "Verbal to algebraic expressions"
+}, {
+    "difficulty": 6,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=278",
+    "question": "Verbal to algebraic sentences"
+}, {
+    "difficulty": 6,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=335",
+    "question": "Mean, median and mode"
+}, {
+    "difficulty": 6,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=336",
+    "question": "Range"
+}, {
+    "difficulty": 6,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=337",
+    "question": "Read and interpret graphs"
+}, {
+    "difficulty": 6,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=969",
+    "question": "Stem and leaf"
+}, {
+    "difficulty": 6,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=974",
+    "question": "Relative frequency"
+}, {
+    "difficulty": 6,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=1017",
+    "question": "Analyze frequency tables"
+}, {
+    "difficulty": 6,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=299",
+    "question": "Estimate volume, area, and circumference"
+}, {
+    "difficulty": 6,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=300",
+    "question": "Estimate Answers"
+}, {
+    "difficulty": 6,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=320",
+    "question": "Estimate a percent"
+}, {
+    "difficulty": 6,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=321",
+    "question": "Estimation (including rounding)"
+}, {
+    "difficulty": 6,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=330",
+    "question": "Dependent events"
+}, {
+    "difficulty": 6,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=331",
+    "question": "Probabilities of compound events"
+}, {
+    "difficulty": 6,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=339",
+    "question": "[List possible outcomes (or calculate the number of possible outcomes) for compound events]"
+}, {
+    "difficulty": 6,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1119",
+    "question": "Use relative frequencies."
+}, {
+    "difficulty": 7,
+    "category": "Division",
+    "skillno": "quiz-create.php?t=skill&skillno=830",
+    "question": "Long division"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=373",
+    "question": "Subsets of real numbers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=374",
+    "question": "Prime factorization in exponential form"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=375",
+    "question": "PEMDAS/BODMAS (all operations)"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=376",
+    "question": "Integers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=377",
+    "question": "Add two integers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=378",
+    "question": "Negative and zero exponents base ten"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=379",
+    "question": "Perfect square roots"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=380",
+    "question": "Calculating square roots"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=381",
+    "question": "Irrational numbers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=382",
+    "question": "Bounds on square roots"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=384",
+    "question": "Rational v irrational"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=385",
+    "question": "Place numbers on number line"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=387",
+    "question": "Scientific notation"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=388",
+    "question": "Scientific notation to ordinary numbers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=389",
+    "question": "Compare numbers in scientific notation"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=390",
+    "question": "The GCF of 2 or more numbers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=391",
+    "question": "LCM of 2 or more numbers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=783",
+    "question": "Subtract integers"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=852",
+    "question": "Compare and order integers from -10 to 10"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=862",
+    "question": "Perfect cubes"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=863",
+    "question": "Cube roots using calculator"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=864",
+    "question": "Bounds on cube roots"
+}, {
+    "difficulty": 7,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=887",
+    "question": "Fundamental Theorem of Arithmetic"
+}, {
+    "difficulty": 7,
+    "category": "Decimals",
+    "skillno": "quiz-create.php?t=skill&skillno=874",
+    "question": "Recurring decimals"
+}, {
+    "difficulty": 7,
+    "category": "Fractions",
+    "skillno": "quiz-create.php?t=skill&skillno=1033",
+    "question": "Add and subtract 3 or more fractions"
+}, {
+    "difficulty": 7,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=1025",
+    "question": "Calculate 100% of an amount"
+}, {
+    "difficulty": 7,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=360",
+    "question": "Map scales"
+}, {
+    "difficulty": 7,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=998",
+    "question": "Direct and inverse proportion"
+}, {
+    "difficulty": 7,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=1016",
+    "question": "Scales as ratios"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=363",
+    "question": "Mass (metric units)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=364",
+    "question": "Justify mass (metric units)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=365",
+    "question": "Convert capacities (metric)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=366",
+    "question": "Metric units of mass"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=367",
+    "question": "Convert mass (metric)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=372",
+    "question": "Mass tools and units (metric)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=900",
+    "question": "Area units and conversion (metric)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1064",
+    "question": "Mass (US standard units)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1065",
+    "question": "Justify mass (US standard units)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1066",
+    "question": "Convert capacities (US)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1067",
+    "question": "US standard units of mass"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1068",
+    "question": "Convert mass (US)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1069",
+    "question": "Mass tools and units (US)"
+}, {
+    "difficulty": 7,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1070",
+    "question": "Area units and conversion (US)"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=349",
+    "question": "Angles of polygons"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=350",
+    "question": "Calculate r or d, given C or A"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=357",
+    "question": "Missing angle of quadrilateral"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=824",
+    "question": "Angles on a line and angles at a point"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=829",
+    "question": "Tessellations"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1117",
+    "question": "Pentagons, hexagons and octagons"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1158",
+    "question": "Area of an annulus and volume of a pipe."
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=352",
+    "question": "Volumes of prisms and cylinders"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=353",
+    "question": "Faces of 3D shapes"
+}, {
+    "difficulty": 7,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=354",
+    "question": "Surface areas of prisms and cylinders"
+}, {
+    "difficulty": 7,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=342",
+    "question": "Add and subtract monomials with exponents of one"
+}, {
+    "difficulty": 7,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=346",
+    "question": "Formulas - Surface area, volume, rate and density"
+}, {
+    "difficulty": 7,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=978",
+    "question": "Reciprocals in algebra"
+}, {
+    "difficulty": 7,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=1030",
+    "question": "Add and subtract simple polynomials"
+}, {
+    "difficulty": 7,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=386",
+    "question": "Know the laws of exponents"
+}, {
+    "difficulty": 7,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=345",
+    "question": "One-step inequalities"
+}, {
+    "difficulty": 7,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=351",
+    "question": "Solve an inequality on the number line"
+}, {
+    "difficulty": 7,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=340",
+    "question": "Verbal to algebra"
+}, {
+    "difficulty": 7,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=344",
+    "question": "Solve multi-step equations"
+}, {
+    "difficulty": 7,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=356",
+    "question": "Explore Pythagoras"
+}, {
+    "difficulty": 7,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=358",
+    "question": "Use Pythagoras"
+}, {
+    "difficulty": 7,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=359",
+    "question": "Applying Pythagoras"
+}, {
+    "difficulty": 7,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=343",
+    "question": "Identify polynomials"
+}, {
+    "difficulty": 7,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=341",
+    "question": "Equation from a table of values"
+}, {
+    "difficulty": 7,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=396",
+    "question": "Circle graphs"
+}, {
+    "difficulty": 7,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=398",
+    "question": "Range for a set of data"
+}, {
+    "difficulty": 7,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=400",
+    "question": "Read and interpret data graphs"
+}, {
+    "difficulty": 7,
+    "category": "Data",
+    "skillno": "quiz-create.php?t=skill&skillno=1122",
+    "question": "Use random sampling"
+}, {
+    "difficulty": 7,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=362",
+    "question": "Estimate surface area"
+}, {
+    "difficulty": 7,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=383",
+    "question": "Estimate Answers"
+}, {
+    "difficulty": 7,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=962",
+    "question": "Areas by counting squares"
+}, {
+    "difficulty": 7,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=347",
+    "question": "[Draw the graphic representation of a pattern from an equation or from a table of data]"
+}, {
+    "difficulty": 7,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=393",
+    "question": "[Predict the outcome of an experiment]"
+}, {
+    "difficulty": 7,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=402",
+    "question": "Interpret data "
+}, {
+    "difficulty": 7,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=368",
+    "question": "Calculate unit prices"
+}, {
+    "difficulty": 7,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=369",
+    "question": "Compare unit prices"
+}, {
+    "difficulty": 7,
+    "category": "Money",
+    "skillno": "quiz-create.php?t=skill&skillno=370",
+    "question": "Convert currencies"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=825",
+    "question": "Binary numbers"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=827",
+    "question": "Hexadecimal numbers"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=845",
+    "question": "Other base numbers"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=906",
+    "question": "Round to decimal place or significant digits"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=938",
+    "question": "Roman and other numeral systems"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=946",
+    "question": "Surds"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=972",
+    "question": "Simplify square roots"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1032",
+    "question": "Square roots (guess method)"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1121",
+    "question": "Rounding methods"
+}, {
+    "difficulty": 8,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1161",
+    "question": "Count past 1,000 using binary fingers"
+}, {
+    "difficulty": 8,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=448",
+    "question": "Percents less than 1% and greater than 100%"
+}, {
+    "difficulty": 8,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=449",
+    "question": "Apply percents"
+}, {
+    "difficulty": 8,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=918",
+    "question": "Percentage error"
+}, {
+    "difficulty": 8,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=919",
+    "question": "Percentage points and basis points"
+}, {
+    "difficulty": 8,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=1022",
+    "question": "Percentage change"
+}, {
+    "difficulty": 8,
+    "category": "Percentages",
+    "skillno": "quiz-create.php?t=skill&skillno=1023",
+    "question": "Percentage difference"
+}, {
+    "difficulty": 8,
+    "category": "Ratios",
+    "skillno": "quiz-create.php?t=skill&skillno=980",
+    "question": "Share in a given ratio"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=445",
+    "question": "Convert to equivalent measurements (metric)"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=901",
+    "question": "Units of speed (metric)"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=960",
+    "question": "Weight v mass (metric)"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=975",
+    "question": "Convert measurements between systems"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1071",
+    "question": "Convert to equivalent measurements (US)"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1072",
+    "question": "Units of speed (US)"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1073",
+    "question": "Weight v mass (US)"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1086",
+    "question": "Metric acceleration"
+}, {
+    "difficulty": 8,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1087",
+    "question": "Convert temperatures"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=407",
+    "question": "Apply algebra to parallel lines"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=429",
+    "question": "Images under translations"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=430",
+    "question": "Images under resizings"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=437",
+    "question": "Supplementary and complementary angles"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=438",
+    "question": "Supplementary and complementary"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=439",
+    "question": "Parallel lines and angle pairs"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=440",
+    "question": "Calculate angles (parallel lines)"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=442",
+    "question": "[Describe and identify transformations in the plane, using proper function notation (rotations, reflections, translations, and dilations)]"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=443",
+    "question": "Images under rotations"
+}, {
+    "difficulty": 8,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=444",
+    "question": "Images under reflections"
+}, {
+    "difficulty": 8,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=405",
+    "question": "Factor algebraic expressions"
+}, {
+    "difficulty": 8,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=417",
+    "question": "[Write verbal expressions that match given mathematical expressions]"
+}, {
+    "difficulty": 8,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=822",
+    "question": "Cross-multiply"
+}, {
+    "difficulty": 8,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=891",
+    "question": "[Know the Implication and Iff symbols, and when each of them is used.]"
+}, {
+    "difficulty": 8,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=950",
+    "question": "Language and Symbols of Mathematics"
+}, {
+    "difficulty": 8,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=1127",
+    "question": "Units and scales."
+}, {
+    "difficulty": 8,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=446",
+    "question": "Apply the laws of exponents"
+}, {
+    "difficulty": 8,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=447",
+    "question": "Integer exponents"
+}, {
+    "difficulty": 8,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=404",
+    "question": "Verbal to algebraic inequalities"
+}, {
+    "difficulty": 8,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=408",
+    "question": "Solve inequalities and graph on a no. line"
+}, {
+    "difficulty": 8,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=409",
+    "question": "Solve linear inequalities"
+}, {
+    "difficulty": 8,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=416",
+    "question": "Graph an inequality on a number line"
+}, {
+    "difficulty": 8,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=435",
+    "question": "Equation of a line in slope/intercept form"
+}, {
+    "difficulty": 8,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=1084",
+    "question": "Area of a polygon using coordinates"
+}, {
+    "difficulty": 8,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=1085",
+    "question": "Slope and intercept from a graph"
+}, {
+    "difficulty": 8,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=406",
+    "question": "Factor simple trinomials"
+}, {
+    "difficulty": 8,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=422",
+    "question": "Polynomials - physical models"
+}, {
+    "difficulty": 8,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=423",
+    "question": "Multiply and divide monomials"
+}, {
+    "difficulty": 8,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=424",
+    "question": "Add and subtract polynomials"
+}, {
+    "difficulty": 8,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=425",
+    "question": "Multiply a binomial by a monomial or a binomial"
+}, {
+    "difficulty": 8,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=426",
+    "question": "Divide a polynomial by a monomial"
+}, {
+    "difficulty": 8,
+    "category": "Logic",
+    "skillno": "quiz-create.php?t=skill&skillno=1035",
+    "question": "Logical reasoning"
+}, {
+    "difficulty": 8,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=412",
+    "question": "Function terminology"
+}, {
+    "difficulty": 8,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=413",
+    "question": "Determine whether a relation is a function"
+}, {
+    "difficulty": 8,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=450",
+    "question": "[Estimate a percent of a quantity, given an application]"
+}, {
+    "difficulty": 8,
+    "category": "Estimation",
+    "skillno": "quiz-create.php?t=skill&skillno=451",
+    "question": "Estimate Answers"
+}, {
+    "difficulty": 8,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=411",
+    "question": "Plot ordered pairs and draw the straight line through them"
+}, {
+    "difficulty": 8,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=414",
+    "question": "Systems of linear equations graphically"
+}, {
+    "difficulty": 8,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=432",
+    "question": "Slope of a straight line"
+}, {
+    "difficulty": 8,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=433",
+    "question": "y-intercept of a straight line"
+}, {
+    "difficulty": 8,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=434",
+    "question": "Graph a line using a table of values"
+}, {
+    "difficulty": 8,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=436",
+    "question": "Graph y = mx + b"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=619",
+    "question": "Radian measure"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=620",
+    "question": "Convert radians and degrees"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=945",
+    "question": "Steradians and square degrees"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=497",
+    "question": "Areas and perimeters of various figures"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=599",
+    "question": "Circle arc length"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=660",
+    "question": "Triangle centers"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=661",
+    "question": "Loci"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=668",
+    "question": "Identify corresponding parts of congruent figures"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=671",
+    "question": "The isosceles triangle theorem "
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=672",
+    "question": "The exterior angle theorem"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=675",
+    "question": "Determine whether lines are parallel"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=676",
+    "question": "Sum of the angles of a polygon"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=677",
+    "question": "One interior or exterior angle of a regular polygon"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=678",
+    "question": "Theorems about parallelograms"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=679",
+    "question": "Theorems about special parallelograms "
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=681",
+    "question": "Theorems about trapezoids"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=682",
+    "question": "Types of quadrilateral"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=683",
+    "question": "Theorems on joining the midpoints of two sides of a triangle"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=686",
+    "question": "Theorems about similar triangles "
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=687",
+    "question": "Theorems about proportional relationships among the segments of the sides of a triangle. "
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=688",
+    "question": "Theorems about mean proportionality - leg rule and altitude rule"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=690",
+    "question": "Chords of a circle"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=692",
+    "question": "Tangents to a circle"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=693",
+    "question": "Two lines intersecting inside a circle (2 chords), or on a circle (tangent and chord)."
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=694",
+    "question": "Theorems about arcs of a circle cut by two parallel lines"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=704",
+    "question": "Analytical representations of transformations"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=848",
+    "question": "Area of a segment of a circle"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=934",
+    "question": "Relationship between the apothem, radius and side of a regular polygon"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=935",
+    "question": "Calculation of the area of a regular polygon."
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=936",
+    "question": "Number of diagonals of a polygon"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=981",
+    "question": "Ratio of areas of similar shapes"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=994",
+    "question": "Circle theorems"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=995",
+    "question": "Cyclic quadrilaterals"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1181",
+    "question": "The Intersecting Chords Theorem"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1191",
+    "question": "The Intersecting Secants Theorem"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Plane)",
+    "skillno": "quiz-create.php?t=skill&skillno=1195",
+    "question": "Two lines intersecting outside a circle (two tangents, two secants, or tangent and secant)."
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=499",
+    "question": "Rectangular solids and cylinders"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=650",
+    "question": "Prisms"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=651",
+    "question": "Pyramids"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=652",
+    "question": "Cylinders"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=653",
+    "question": "Cones"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=654",
+    "question": "Spheres"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=859",
+    "question": "Cross-sections"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=880",
+    "question": "Euler's formula"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=948",
+    "question": "Torus"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1092",
+    "question": "Surface areas and volumes of Platonic solids"
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1144",
+    "question": "Rotate two-dimensional objects."
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1188",
+    "question": "Compare the volumes and surface areas of a cone, a sphere and a cylinder."
+}, {
+    "difficulty": 9,
+    "category": "Geometry (Solid)",
+    "skillno": "quiz-create.php?t=skill&skillno=1192",
+    "question": "The volume of a horizontal cylinder"
+}, {
+    "difficulty": 9,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=833",
+    "question": "Polar coordinates"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=488",
+    "question": "Find the sine, cosine, and tangent ratios"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=489",
+    "question": "Find an angle in a right triangle"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=490",
+    "question": "Find a side in a right triangle"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=491",
+    "question": "Pythagorean theorem"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=592",
+    "question": "The 6 trigonometric functions and identities"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=593",
+    "question": "Exact values of sine, cosine and tangent of common angles"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=594",
+    "question": "The reference angle"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=595",
+    "question": "Co-function and reciprocal trigonometric ratios"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=596",
+    "question": "Values of the secant, cosecant, and cotangent of common angles"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=598",
+    "question": "The Unit Circle"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=600",
+    "question": "Find the value of trigonometric functions, if given a point on the terminal side of angle (theta)"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=601",
+    "question": "Existence of the inverses of trig functions"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=602",
+    "question": "Inverse trig functions"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=603",
+    "question": "Graphs of inverse trig functions"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=604",
+    "question": "Use a calculator to find the value of trig functions"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=605",
+    "question": "The Pythagorean identities"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=606",
+    "question": "Simple trig equations"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=607",
+    "question": "Amplitude, period, frequency, phase shift and vertical shift"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=609",
+    "question": "[Sketch and recognize one cycle of a function of the form y = A sin(Bx) or y = A cos(Bx)]"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=610",
+    "question": "Graphs of y = sec(x), y = csc(x), y=tan(x), and y=cot(x)"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=611",
+    "question": "Trig equations from graphs"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=612",
+    "question": "The Law of Sines"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=613",
+    "question": "Area = 1/2absinC etc"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=614",
+    "question": "[Determine the solution(s) of triangles from the SSA situation (ambiguous case)]"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=615",
+    "question": "Angle sum and difference formulas"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=616",
+    "question": "Double-angle and half-angle formulas"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=667",
+    "question": "How to find if triangles are congruent(SSS, SAS, ASA, AAS, HL)"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=670",
+    "question": "The sum of the angles of a triangle "
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=673",
+    "question": "The triangle inequality theorem"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=674",
+    "question": "[Determine either the longest side of a triangle given the three angle measures or the largest angle given the lengths of three sides of a triangle]"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=684",
+    "question": "The centroid of a triangle divides each median in the ratio 2:1"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=685",
+    "question": "How to find if triangles are similar (AA, SAS, and SSS)"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=689",
+    "question": "Investigate the Pythagorean theorem."
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=889",
+    "question": "Heron's formula"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=942",
+    "question": "Solve triangles by reflection"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=955",
+    "question": "Triangle identities"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=956",
+    "question": "The opposite angle identities"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=993",
+    "question": "Trig functions in the 4 quadrants"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=1093",
+    "question": "The Law of Cosines"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=1094",
+    "question": "Solve a triangle"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=1118",
+    "question": "The magic hexagon"
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=1126",
+    "question": "The Pythagorean Theorem in 3 dimensions."
+}, {
+    "difficulty": 9,
+    "category": "Trigonometry",
+    "skillno": "quiz-create.php?t=skill&skillno=1160",
+    "question": "Three-figure bearings"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=528",
+    "question": "Conditional probability"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=529",
+    "question": "Number in sample space and favorable outcomes"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=531",
+    "question": "Probability of the complement"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=532",
+    "question": "Determine empirical probabilities"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=533",
+    "question": "Equally likely, more likely and certain events"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=534",
+    "question": "Independent and mutually exclusive events"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=635",
+    "question": "Calculate theoretical probabilities"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=636",
+    "question": "Empirical probabilities"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=637",
+    "question": "The Binomial probability formula"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1095",
+    "question": "Tree diagrams"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1096",
+    "question": "'False positives' and 'false negatives'"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1097",
+    "question": "Shared birthday"
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1145",
+    "question": "Compare empirical and theoretical probabilities."
+}, {
+    "difficulty": 10,
+    "category": "Probability",
+    "skillno": "quiz-create.php?t=skill&skillno=1175",
+    "question": "Bayes' Theorem"
+}, {
+    "difficulty": 10,
+    "category": "Combinations",
+    "skillno": "quiz-create.php?t=skill&skillno=517",
+    "question": "Basic Counting Principle"
+}, {
+    "difficulty": 10,
+    "category": "Combinations",
+    "skillno": "quiz-create.php?t=skill&skillno=518",
+    "question": "Determine the number of permutations"
+}, {
+    "difficulty": 10,
+    "category": "Combinations",
+    "skillno": "quiz-create.php?t=skill&skillno=632",
+    "question": "Calculate permutations"
+}, {
+    "difficulty": 10,
+    "category": "Combinations",
+    "skillno": "quiz-create.php?t=skill&skillno=633",
+    "question": "Calculate combinations"
+}, {
+    "difficulty": 10,
+    "category": "Combinations",
+    "skillno": "quiz-create.php?t=skill&skillno=646",
+    "question": "Permutations or combinations?"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=521",
+    "question": "Percentiles"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=522",
+    "question": "Identify positive, negative, or no correlation"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=526",
+    "question": "Linear transformations of one-variable data"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=527",
+    "question": "Interpolation and extrapolation from line of best fit"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=536",
+    "question": "Compare mean, median and mode"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=538",
+    "question": "Construct box-and-whisker plots "
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=540",
+    "question": "Equation of line of best fit"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=541",
+    "question": "Analyze frequency tables/histograms, cumulative frequency tables/histograms, and box and whisker plots"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=638",
+    "question": "The Normal approximation to the Binomial distribution"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=640",
+    "question": "Measures of central tendency for grouped data"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=641",
+    "question": "Calculate measures of dispersion"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=643",
+    "question": "Linear, logarithmic, exponential and power regression models."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=645",
+    "question": "Interpret the value of the correlation coefficient"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=944",
+    "question": "Use the Standardized Normal distribution table."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=963",
+    "question": "Mean from a frequency table"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=982",
+    "question": "1 sigma, 2 sigma and 3 sigma limits"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=983",
+    "question": "Standardize a Normal Distribution"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=984",
+    "question": "Outliers"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=985",
+    "question": "Skewed data"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1098",
+    "question": "Pearson Correlation Coefficient"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1134",
+    "question": "Mean, variance and SD of the Binomial Distribution."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1146",
+    "question": "Estimate a population mean and standard deviation."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1147",
+    "question": "Tests of significance."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1148",
+    "question": "Discrete Random Variables."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1149",
+    "question": "Expected value, variance and standard deviation of a discrete random variable."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1150",
+    "question": "Weighted mean."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1151",
+    "question": "Unbiased selections."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1153",
+    "question": "Continuous Random Variables."
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1174",
+    "question": "Confidence intervals"
+}, {
+    "difficulty": 10,
+    "category": "Statistics",
+    "skillno": "quiz-create.php?t=skill&skillno=1178",
+    "question": "Chi-Square Test"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=512",
+    "question": "Simplify radical terms"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=513",
+    "question": "Arithmetic operations on radical terms"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=514",
+    "question": "Products and quotients in scientific notation"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=515",
+    "question": "Solve algebraic problems"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=516",
+    "question": "Evaluate factorials, absolute values, and exponential expressions"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=882",
+    "question": "Factorials"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=931",
+    "question": "Imaginary and complex numbers"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1123",
+    "question": "Repeating decimals to fractions."
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1159",
+    "question": "Geometric mean"
+}, {
+    "difficulty": 9,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1187",
+    "question": "The harmonic mean"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=507",
+    "question": "Calculate rates"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=508",
+    "question": "Conversion problems (metric)"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=510",
+    "question": "Error in measurement (metric)"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1074",
+    "question": "Conversion problems (US)"
+}, {
+    "difficulty": 9,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=1075",
+    "question": "Error in measurement (US)"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=452",
+    "question": "Verbal to algebraic"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=458",
+    "question": "When an algebraic fraction is undefined."
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=460",
+    "question": "Add or subtract fractional expressions."
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=461",
+    "question": "Multiply and divide algebraic fractions."
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=462",
+    "question": "The difference of two squares"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=463",
+    "question": "[Write verbal expressions that match given mathematical expressions]"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=464",
+    "question": "Factor algebraic expressions completely"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=467",
+    "question": "Solve literal equations"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=469",
+    "question": "Equations with fractional expressions"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=470",
+    "question": "Proportions resulting in linear or quadratic equations"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=485",
+    "question": "Verbal sentences to equations or inequalities"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=492",
+    "question": "Write algebraic equations or inequalities that represent a situation"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=847",
+    "question": "Solve equations using a change of variable."
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=877",
+    "question": "[Understand the difference between an equation and a formula.]"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=878",
+    "question": "Change the subject of a formula"
+}, {
+    "difficulty": 9,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=943",
+    "question": "The different meanings of Standard Form"
+}, {
+    "difficulty": 9,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=455",
+    "question": "Use the laws of exponents in algebra"
+}, {
+    "difficulty": 9,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=465",
+    "question": "Is it a solution of an equation or inequality?"
+}, {
+    "difficulty": 9,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=468",
+    "question": "Solve linear inequalities in one variable"
+}, {
+    "difficulty": 9,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=486",
+    "question": "Solutions to a system of linear inequalities"
+}, {
+    "difficulty": 9,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=503",
+    "question": "Graph linear inequalities"
+}, {
+    "difficulty": 9,
+    "category": "Coordinates",
+    "skillno": "quiz-create.php?t=skill&skillno=977",
+    "question": "Coordinates in 3D"
+}, {
+    "difficulty": 9,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=453",
+    "question": "Systems of linear equations"
+}, {
+    "difficulty": 9,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=466",
+    "question": "Linear equations in one variable"
+}, {
+    "difficulty": 9,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=493",
+    "question": "Verbal problems leading to linear equations or inequalities"
+}, {
+    "difficulty": 9,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=494",
+    "question": "Verbal problems leading to systems of linear equations"
+}, {
+    "difficulty": 9,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=1135",
+    "question": "Justifying the elimination method."
+}, {
+    "difficulty": 9,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=454",
+    "question": "Solve a system of one linear and one quadratic equation in two variables"
+}, {
+    "difficulty": 9,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=471",
+    "question": "The multiplication property of zero"
+}, {
+    "difficulty": 9,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=495",
+    "question": "Verbal problems that involve quadratic equations"
+}, {
+    "difficulty": 9,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=456",
+    "question": "Add, subtract and multiply monomials and polynomials"
+}, {
+    "difficulty": 9,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=457",
+    "question": "Divide a polynomial by a monomial or binomial (no remainder)"
+}, {
+    "difficulty": 9,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=459",
+    "question": "Simplify algebraic fractions"
+}, {
+    "difficulty": 9,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=823",
+    "question": "Special Binomial Products"
+}, {
+    "difficulty": 9,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=473",
+    "question": "Set-builder notation and interval notation"
+}, {
+    "difficulty": 9,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=475",
+    "question": "Complement of a set"
+}, {
+    "difficulty": 9,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=476",
+    "question": "Set notation"
+}, {
+    "difficulty": 9,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=511",
+    "question": "The properties of real numbers"
+}, {
+    "difficulty": 9,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=997",
+    "question": "Union or intersection in interval notation"
+}, {
+    "difficulty": 9,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=1091",
+    "question": "Venn diagrams"
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=500",
+    "question": "Is it a function, given ordered pairs or graphs "
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=501",
+    "question": "Graph linear, quadratic, absolute value, and exponential functions"
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=502",
+    "question": "How changing the coefficients of a function affects its graph"
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=505",
+    "question": "Find simple roots of a parabolic function graphically"
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=573",
+    "question": "When a relation is a function"
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=579",
+    "question": "When a function is one-to-one, onto or both"
+}, {
+    "difficulty": 9,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=893",
+    "question": "Injective, surjective and bijective functions"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=477",
+    "question": "Slope or gradient"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=478",
+    "question": "Slope (gradient) given two points on a line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=479",
+    "question": "Equation of a line from slope (gradient) and coordinates of a point"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=480",
+    "question": "Equation of a line through 2 points"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=481",
+    "question": "[Write the equation of a line parallel to the x-axis or the y-axis]"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=482",
+    "question": "Slope (gradient) of a straight line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=483",
+    "question": "Equations of parallel lines"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=484",
+    "question": "Find if a given point is on a line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=487",
+    "question": "Parabola vertex, axis of symmetry, focus and directrix"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=498",
+    "question": "The vertex and axis of symmetry of a parabola from its graph"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=504",
+    "question": "Solve systems of linear equations and inequalities graphically"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=506",
+    "question": "Solve systems of linear and quadratic equations graphically."
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=705",
+    "question": "Slope of a perpendicular line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=706",
+    "question": "Parallel, perpendicular, or neither?"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=707",
+    "question": "Line through a point and perpendicular to a given line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=708",
+    "question": "Line through a point and parallel to a given line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=709",
+    "question": "Midpoint of a line segment"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=710",
+    "question": "Distance between two points"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=711",
+    "question": "Find the equation of a perpendicular bisector"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=712",
+    "question": "Distance, midpoint, and slope (gradient) formulas applied to triangles and quadrilaterals"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=907",
+    "question": "Draw the curve of a simple function "
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=947",
+    "question": "Symmetry in equations"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=1083",
+    "question": "Area of ellipse"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=1089",
+    "question": "Different forms of the equation of a straight line"
+}, {
+    "difficulty": 9,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=1142",
+    "question": "Divide a line segment in a given ratio"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=623",
+    "question": "Arithmetic operations on irrational numbers in radical form"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=625",
+    "question": "Arithmetic operations on irrational expressions"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=626",
+    "question": "Rationalize a denominator"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=879",
+    "question": "Algebraic v transcendental numbers"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=928",
+    "question": "Advanced concepts of prime numbers"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=930",
+    "question": "Pythagorean triples"
+}, {
+    "difficulty": 10,
+    "category": "Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=954",
+    "question": "Well-known transcendental numbers"
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=627",
+    "question": "Square roots in terms of i"
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=628",
+    "question": "Powers of i"
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=629",
+    "question": "Complex conjugate"
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=630",
+    "question": "Arithmetic operations on complex numbers"
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1099",
+    "question": "The complex plane."
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1100",
+    "question": "Complex numbers in polar form"
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1128",
+    "question": "Arithmetic operations on the complex plane."
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1129",
+    "question": "Distance and midpoint of numbers in the complex plane."
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1130",
+    "question": "Factor polynomial expressions as the product of complex factors."
+}, {
+    "difficulty": 10,
+    "category": "Complex Numbers",
+    "skillno": "quiz-create.php?t=skill&skillno=1154",
+    "question": "Euler's Formula for Complex Numbers"
+}, {
+    "difficulty": 10,
+    "category": "Measurement",
+    "skillno": "quiz-create.php?t=skill&skillno=902",
+    "question": "Metric (SI) units"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=542",
+    "question": "Absolute value equations and inequalities "
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=546",
+    "question": "Simplify radical expressions"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=547",
+    "question": "Add, subtract, multiply, and divide radical expressions"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=548",
+    "question": "Rationalize denominators in algebra"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=549",
+    "question": "Arithmetic operations on rational expressions"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=550",
+    "question": "Simplify complex fractional expressions"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=556",
+    "question": "Radical equations"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=557",
+    "question": "Solve rational equations and inequalities"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=586",
+    "question": "Direct and inverse variation"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=868",
+    "question": "Terms and degree of a polynomial, degree of a rational expression"
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=912",
+    "question": "Partial fractions."
+}, {
+    "difficulty": 10,
+    "category": "Algebra",
+    "skillno": "quiz-create.php?t=skill&skillno=941",
+    "question": "Checking roots of a radical equation"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=496",
+    "question": "Exponential growth and decay"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=543",
+    "question": "Algebraic expressions - fractional exponents to radical"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=544",
+    "question": " Algebraic expressions - radical to fractional exponents"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=545",
+    "question": "Evaluate exponential expressions"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=561",
+    "question": "Solve exponential equations"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=590",
+    "question": "Graph exponential functions"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=597",
+    "question": "Exponential function applications"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=617",
+    "question": "Simplify expressions involving negative and/or fractional exponents"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=618",
+    "question": "Algebraic expressions with negative exponents"
+}, {
+    "difficulty": 10,
+    "category": "Exponents",
+    "skillno": "quiz-create.php?t=skill&skillno=621",
+    "question": "Evaluate numerical expressions with negative and/or fractional exponents"
+}, {
+    "difficulty": 10,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=575",
+    "question": "Quadratic inequalities"
+}, {
+    "difficulty": 10,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=895",
+    "question": "Interval notation related to the number line and inequalities"
+}, {
+    "difficulty": 10,
+    "category": "Inequalities",
+    "skillno": "quiz-create.php?t=skill&skillno=929",
+    "question": "Properties of inequalities"
+}, {
+    "difficulty": 10,
+    "category": "Linear Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=913",
+    "question": "Solve systems of three linear equations in three variables"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=553",
+    "question": "Nature of roots of a quadratic"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=554",
+    "question": "Sum and product of roots of a quadratic"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=555",
+    "question": "Quadratic equation given the sum and product of its roots"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=558",
+    "question": "Completing the square"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=559",
+    "question": "The quadratic formula"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=564",
+    "question": "Solve systems of equations - one linear and one quadratic - algebraically."
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=714",
+    "question": "Solve systems of equations - one linear and one quadratic - graphically."
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=853",
+    "question": "Solve quadratic equations by factoring"
+}, {
+    "difficulty": 10,
+    "category": "Quadratic Equations",
+    "skillno": "quiz-create.php?t=skill&skillno=1112",
+    "question": "Real World Examples of Quadratic Equations"
+}, {
+    "difficulty": 10,
+    "category": "Logarithms",
+    "skillno": "quiz-create.php?t=skill&skillno=551",
+    "question": "Evaluate logarithmic expressions"
+}, {
+    "difficulty": 10,
+    "category": "Logarithms",
+    "skillno": "quiz-create.php?t=skill&skillno=552",
+    "question": "Rewrite logarithmic expressions in equivalent forms"
+}, {
+    "difficulty": 10,
+    "category": "Logarithms",
+    "skillno": "quiz-create.php?t=skill&skillno=562",
+    "question": "Solve logarithmic equations"
+}, {
+    "difficulty": 10,
+    "category": "Logarithms",
+    "skillno": "quiz-create.php?t=skill&skillno=591",
+    "question": "[Graph logarithmic functions, using the inverse of the related exponential function]"
+}, {
+    "difficulty": 10,
+    "category": "Logarithms",
+    "skillno": "quiz-create.php?t=skill&skillno=1109",
+    "question": "Write a logarithmic expression in exponential form and vice versa"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=560",
+    "question": "Polynomial equations (n > 2)"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=587",
+    "question": "Approximate solutions to polynomial equations from graphs"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=608",
+    "question": "Factor polynomials completely"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=624",
+    "question": "Operations with polynomial expressions"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=870",
+    "question": "Difference and sum of 2 cubes"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=886",
+    "question": "Fundamental Theorem of Algebra"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=914",
+    "question": "Polynomial long division"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=925",
+    "question": "All zeros of a polynomial expression"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=926",
+    "question": "The rule of signs"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=937",
+    "question": "The Remainder and Factor Theorems"
+}, {
+    "difficulty": 10,
+    "category": "Polynomials",
+    "skillno": "quiz-create.php?t=skill&skillno=996",
+    "question": "The sum and product of the roots of a polynomial (n > 2)"
+}, {
+    "difficulty": 10,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=896",
+    "question": "[Introduction to groups.]"
+}, {
+    "difficulty": 10,
+    "category": "Sets",
+    "skillno": "quiz-create.php?t=skill&skillno=927",
+    "question": "Power sets"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=574",
+    "question": "Domain and range from an equation"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=576",
+    "question": "Write functions in functional notation"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=577",
+    "question": "Evaluate functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=578",
+    "question": "Composition of functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=581",
+    "question": "Inverse of a function"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=582",
+    "question": "Transformations of functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=588",
+    "question": "Domain and range from graph"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=589",
+    "question": "Identify relations and functions, using graphs"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=799",
+    "question": "Types of function"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=843",
+    "question": "The 3 types of asymptote"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=844",
+    "question": "Equations of asymptotes"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=854",
+    "question": "Domain of compositions of functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=875",
+    "question": "Range v Codomain"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=881",
+    "question": "Even and odd functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=885",
+    "question": "'Floor', 'ceiling', 'integer' and 'fractional part' functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=911",
+    "question": "Add, subtract, multiply and divide functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=921",
+    "question": "Piecewise functions"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=933",
+    "question": "Set builder notation"
+}, {
+    "difficulty": 10,
+    "category": "Functions",
+    "skillno": "quiz-create.php?t=skill&skillno=1136",
+    "question": "Compare properties of two or more functions."
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=563",
+    "question": "nth term of an arithmetic or geometric sequence"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=565",
+    "question": "Find the common difference"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=566",
+    "question": "Find the common ratio"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=567",
+    "question": "A specified term of an arithmetic or geometric sequence"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=568",
+    "question": "Terms of a sequence from its definition"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=569",
+    "question": "Express in sigma notation"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=570",
+    "question": "Sum of the first n terms of an arithmetic or geometric series"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=571",
+    "question": "The Binomial Theorem"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=622",
+    "question": "Sigma notation"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=883",
+    "question": "The Fibonacci sequence and the Golden ratio"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=908",
+    "question": "Special sequences"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=915",
+    "question": "Sum of n, sum of n^2 and sum of n^3"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=916",
+    "question": "Pascal's triangle"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=1110",
+    "question": "Use differences to find the rule for a sequence"
+}, {
+    "difficulty": 10,
+    "category": "Sequences and Sums",
+    "skillno": "quiz-create.php?t=skill&skillno=1137",
+    "question": "Arithmetic and geometric sequences as functions."
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1076",
+    "question": "Understand vectors "
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1077",
+    "question": "Add and subtract vectors"
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1078",
+    "question": "Multiply a vector by a scalar"
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1079",
+    "question": "Magnitude and direction of a vector"
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1080",
+    "question": "Unit vectors"
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1081",
+    "question": "Vectors - dot product"
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1082",
+    "question": "Vectors - cross product"
+}, {
+    "difficulty": 10,
+    "category": "Vectors",
+    "skillno": "quiz-create.php?t=skill&skillno=1131",
+    "question": "Solve problems using vectors."
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=964",
+    "question": "Matrix basics"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=965",
+    "question": "Multiply matrices"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=967",
+    "question": "Types of matrix"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=968",
+    "question": "Determinant (2 by 2 and 3 by 3)"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=986",
+    "question": "Conditions for an inverse and singular matrices"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=987",
+    "question": "Inverse by conventional method"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=988",
+    "question": "Inverse using elementary row operations"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=989",
+    "question": "Inverse using Minors, Cofactors and Adjugate"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=990",
+    "question": "Solve a system of linear equations using matrices"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=1133",
+    "question": "Matrix equations."
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=1189",
+    "question": "Eigenvalues and eigenvectors"
+}, {
+    "difficulty": 10,
+    "category": "Matrices",
+    "skillno": "quiz-create.php?t=skill&skillno=1190",
+    "question": "Rank of a matrix"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=583",
+    "question": "General form of a circle from Standard form"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=584",
+    "question": "Equation of a circle given center and a point, or endpoints of a diameter"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=585",
+    "question": "Equation of a circle from its graph"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=662",
+    "question": "Compound loci"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=715",
+    "question": "Center and/or radius from Standard Form"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=716",
+    "question": "Standard form of a circle from General form"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=717",
+    "question": "Center and/or radius from General Form"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=718",
+    "question": "Graph circles of the form (x - h)^2 + (y - k)^2 = r^2"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=828",
+    "question": "Conic sections"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=884",
+    "question": "x and y intercepts for a graph given its equation"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=920",
+    "question": "Perimeter of an ellipse"
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=1090",
+    "question": "Determine the equation of a curve given some points."
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=1140",
+    "question": "Equation of a parabola given a focus or directrix."
+}, {
+    "difficulty": 10,
+    "category": "Graphs",
+    "skillno": "quiz-create.php?t=skill&skillno=1141",
+    "question": "Equations of ellipses and hyperbolas given the foci."
+}]
