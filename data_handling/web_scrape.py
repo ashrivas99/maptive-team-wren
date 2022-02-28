@@ -3,6 +3,8 @@ from time import sleep
 import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 
 SITE_URL = "https://mathopolis.com/questions/"
 QUESTION_URL = "skills.php?year="
@@ -26,7 +28,8 @@ DIFFICULTIES = {
     "A2": 10
 }
 
-driver = webdriver.Chrome("/usr/local/bin/chromedriver")
+service = Service("/usr/local/bin/chromedriver")
+driver = webdriver.Chrome(service=service)
 
 
 def create_problem(grade, curr_cat, ques):
@@ -43,7 +46,7 @@ def create_problem(grade, curr_cat, ques):
 
 def get_relevant_elements(grade_url):
     """Retrieves any question category or question title elements from a web page."""
-    grade_but = driver.find_element_by_xpath('//a[@href="' + grade_url + '"]')
+    grade_but = driver.find_element(By.XPATH, '//a[@href="' + grade_url + '"]')
     grade_but.click()
     sleep(2)
     soup = BeautifulSoup(driver.page_source, "html.parser")
