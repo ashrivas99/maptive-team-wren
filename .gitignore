@@ -3,6 +3,12 @@
 backend/venv
 backend/.idea
 backend/maptive_backend_apis/__pycache__/__init__.cpython-39.pyc
+.env
+.venv
+env/
+venv/
+.idea
+.idea/
 
 # dependencies
 /node_modules
