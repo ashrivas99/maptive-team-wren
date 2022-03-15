@@ -1,7 +1,7 @@
 import os
 import json
 
-from flask import Flask, request
+from flask import Flask, jsonify, make_response, request
 
 
 def create_app(test_config=None):
@@ -24,6 +24,15 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    # get json question data
+    @app.route('/question_data', methods=['GET'])
+    def question_data():
+        f = open('data_handling/data.json')
+        data = json.load(f)
+        response = jsonify({'data': data})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
 
     # a simple page that says hello
     @app.route('/hello')
