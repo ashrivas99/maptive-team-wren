@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, SelectorIcon } from '@heroicons/react/solid'
+import Link from "next/link"
 
 const grades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -11,6 +12,13 @@ function classNames(...classes) {
 export default function Form() {
     const [name, setName] = useState("");
     const [grade, setGrade] = useState(grades[3])
+
+    const registerUser = async (name, grade) => {
+        // TODO: call backend to register user
+        console.log(name)
+        console.log(grade)
+        const success = true;
+    }
 
     return (
         <div className='max-w-3xl mx-auto bg-blue-200 p-20 rounded-3xl flex-col space-y-5'>
@@ -89,6 +97,9 @@ export default function Form() {
                     )}
                 </Listbox>
             </div>
+            <Link href="/question" >
+                <a><button onClick={() => registerUser(name, grade)}>Submit</button></a>
+            </Link>
         </div>
     )
 }
