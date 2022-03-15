@@ -2,6 +2,12 @@ import { React, useState, useEffect } from "react";
 export default function Question() {
     const [data, setData] = useState(null)
     const [isLoading, setLoading] = useState(false)
+    const [index, setIndex] = useState(0);
+
+    function changeQuestion() {
+        let newIndex = Math.floor(Math.random() * (data.length - 0) + 0);
+        setIndex(newIndex);
+    }
 
     useEffect(() => {
         setLoading(true)
@@ -21,9 +27,8 @@ export default function Question() {
 
     return (
         <div>
-            {data.map(function (q, index) {
-                return <p key={index}>{q.question}</p>;
-            })}
+            <p>{data[index].question}</p>
+            <button onClick={changeQuestion}> new question! </button>
         </div>
     )
 }
