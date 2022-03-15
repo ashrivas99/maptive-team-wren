@@ -1,9 +1,10 @@
+import Link from "next/link"
 import Head from 'next/head'
-import Image from 'next/image'
 import Form from '../components/Form'
 
 export default function Home() {
   return (
+
     <div className="h-screen flex items-center justify-center">
       <Head>
         <title>Create Next App</title>
@@ -13,9 +14,21 @@ export default function Home() {
 
       <div className='mx-auto flex-1 flex-col justify-center items-center space-y-16'>
         <h1 className='text-center font-bold text-2xl text-blue-900'>Adaptive Application Project - Team Wren :)</h1>
-        <Form/>
+        <Form />
       </div>
-      
+      <div>
+        <Link href="/" >
+          <a >
+            <h2>Home </h2>
+          </a>
+        </Link>
+        <Link href="/question" >
+          <a >
+            <h2>Question </h2>
+            </a>
+          </Link>
+      </div>
     </div>
   )
 }
+
