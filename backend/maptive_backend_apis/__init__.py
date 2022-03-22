@@ -1,29 +1,64 @@
 import os
 import json
-
 from flask import Flask, jsonify, make_response, request
 
 
 def create_app(test_config=None):
-    # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
     )
-
     if test_config is None:
-        # load the instance config, if it exists, when not testing
         app.config.from_pyfile('config.py', silent=True)
     else:
-        # load the test config if passed in
         app.config.from_mapping(test_config)
-
-    # ensure the instance folder exists
     try:
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    # get all users in DB
+    @app.route('/getAllUsers', methods=['GET'])
+    def getAllUsers():
+        users_list = ''
+        for user in query_db('select * from users'):
+            print(user['username'], 'has the id', user['id'])
+            users_list = users_list+str(user['username'])+'\n'
+
+        return users_list
+
+    # register new users
+    @app.route('/registerUser', methods=['POST'])
+    def registerUser():
+        req_username = request.form.get('username')
+        req_password = request.form.get('password')
+        user = query_db('select * from users where username = ?',
+                        [req_username], one=True)
+        if user is None:
+            print('No such user')
+            insert_into_db('insert into users(username, password, questionnaire_filled) values (?,?,?)',
+                           (req_username, req_password, 'False'))
+            return 'New user added'
+
+        else:
+            print(req_username, 'has the id', user['id'])
+        return 'User already exists'
+
+    # get existing user
+    @app.route('/fetchUser', methods=['POST'])
+    def fetchUser():
+        req_username = request.form.get('username')
+        req_password = request.form.get('password')
+        # to-do : add authentication
+        user = query_db('select * from users where username = ?',
+                        [req_username], one=True)
+        if user is None:
+            print('No such user')
+            return 'User does not exist'
+        else:
+            print(req_username, 'has the id', user['id'])
+        return {'username': user['username'], 'questionnaire_filled': user['questionnaire_filled']}
 
     # get json question data
     @app.route('/question_data', methods=['GET'])
@@ -34,72 +69,49 @@ def create_app(test_config=None):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
-    # a simple page that says hello
-    @app.route('/hello')
-    def hello():
-        return 'Hello, World!'
-        # a simple page that says hello
+    # below api not needed? review
 
-    @app.route('/add_user', methods=['POST'])
-    def add_user():
-        # By default questionaire is No
-        # Add username to json
-        form_username = request.form.get('username')
+    # # Assuming front-end will send the username again, we can't have dups for now
+    # @app.route('/questionnaire_done', methods=['POST'])
+    # def questionnaire_done():
+    #     form_username = request.form.get('username')
 
-        # function to add to JSON
-        with open('./user_data.json', 'r+') as file:
-            file_data = json.load(file)
+    #     # function to add to JSON
+    #     with open('./user_data.json', 'r') as file:
+    #         user_json_db = json.load(file)
 
-            # new_data = {'user_name': {form_username}, 'questionnaire_filled': False}
-            # file_data["users"].update(new_data)
-            file_data.append({"user_name": form_username,
-                              "questionnaire_filled": False})
-            # # Sets file's current position at offset.
-            file.seek(0)
-            # convert back to json.
-            json.dump(file_data, file, indent=4)
+    #     for user in user_json_db:
+    #         if user['user_name'] == form_username:
+    #             # Update the entry within the username of questionaire yesx
+    #             user['questionnaire_filled'] = True
+    #         print(user_json_db)
+    #         print(type(user_json_db))
 
-        return 'User added'
+    #         with open('./user_data.json', 'w') as file:
+    #             file.seek(0)
+    #             json.dump(user_json_db, file, indent=4)
 
-    @app.route('/fetch_user', methods=['GET'])
-    def fetch_user():
-        form_username = request.form.get('username')
+    #         # # Sets file's current position at offset.
+    #         # file.seek(0)
+    #         # # convert back to json.
+    #         # json.dump(file_data, file, indent=4)
+    #     return 'Questionnaire Done'
 
-        # Read user data
-        with open('./user_data.json', 'r') as f:
-            user_json_db = json.load(f)
+    def query_db(query, args=(), one=False):
+        conn = db.get_db()
+        cur = conn.execute(query, args)
+        rv = cur.fetchall()
+        conn.commit()
+        cur.close()
+        return (rv[0] if rv else None) if one else rv
 
-        # Search in dict/json for the username
-        for user in user_json_db:
-            if user['user_name'] == form_username:
-                return user
+    def insert_into_db(query, args=()):
+        conn = db.get_db()
+        cur = conn.execute(query, args)
+        conn.commit()
+        cur.close()
 
-        return 'User Not Found'
-
-    # Assuming front-end will send the username again, we can't have dups for now
-    @app.route('/questionnaire_done', methods=['POST'])
-    def questionnaire_done():
-        form_username = request.form.get('username')
-
-        # function to add to JSON
-        with open('./user_data.json', 'r') as file:
-            user_json_db = json.load(file)
-
-        for user in user_json_db:
-            if user['user_name'] == form_username:
-                # Update the entry within the username of questionaire yesx
-                user['questionnaire_filled'] = True
-            print(user_json_db)
-            print(type(user_json_db))
-
-            with open('./user_data.json', 'w') as file:
-                file.seek(0)
-                json.dump(user_json_db, file, indent=4)
-
-            # # Sets file's current position at offset.
-            # file.seek(0)
-            # # convert back to json.
-            # json.dump(file_data, file, indent=4)
-        return 'Questionnaire Done'
+    from . import db
+    db.init_app(app)
 
     return app
