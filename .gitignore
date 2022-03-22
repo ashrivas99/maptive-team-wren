@@ -43,3 +43,4 @@ yarn-error.log*
 
 # vercel
 .vercel
+backend/maptive_backend_apis/__pycache__/db.cpython-39.pyc

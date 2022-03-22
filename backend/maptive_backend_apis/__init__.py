@@ -1,4 +1,5 @@
 import os
+import random
 import json
 from flask import Flask, jsonify, make_response, request
 
@@ -66,6 +67,16 @@ def create_app(test_config=None):
         f = open('data_handling/data.json')
         data = json.load(f)
         response = jsonify({'data': data})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
+   # get json question choice
+    @app.route('/pick_question', methods=['GET'])
+    def pick_question():
+        f = open('data_handling/data.json')
+        data = json.load(f)
+        new_index = random.randint(0, len(data))
+        response = jsonify({'index': new_index})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 

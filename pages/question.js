@@ -5,8 +5,15 @@ export default function Question() {
     const [index, setIndex] = useState(0);
 
     function changeQuestion() {
-        let newIndex = Math.floor(Math.random() * (data.length - 0) + 0);
-        setIndex(newIndex);
+        fetch('http://localhost:5000/pick_question', {
+            method: 'GET',
+            mode: 'cors'
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data.index)
+                setIndex(data.index);
+            })
     }
 
     useEffect(() => {
