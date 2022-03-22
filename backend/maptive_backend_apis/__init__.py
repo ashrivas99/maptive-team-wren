@@ -33,13 +33,12 @@ def create_app(test_config=None):
     @app.route('/registerUser', methods=['POST'])
     def registerUser():
         req_username = request.form.get('username')
-        req_password = request.form.get('password')
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
         if user is None:
             print('No such user')
-            insert_into_db('insert into users(username, password, questionnaire_filled) values (?,?,?)',
-                           (req_username, req_password, 'False'))
+            insert_into_db('insert into users(username, questionnaire_filled) values (?,?)',
+                           (req_username, 'False'))
             return 'New user added'
 
         else:
@@ -50,8 +49,6 @@ def create_app(test_config=None):
     @app.route('/fetchUser', methods=['POST'])
     def fetchUser():
         req_username = request.form.get('username')
-        req_password = request.form.get('password')
-        # to-do : add authentication
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
         if user is None:

@@ -3,6 +3,7 @@
 backend/venv
 backend/.idea
 backend/maptive_backend_apis/__pycache__/__init__.cpython-39.pyc
+backend/maptive_backend_apis/__pycache__
 .env
 .venv
 env/
