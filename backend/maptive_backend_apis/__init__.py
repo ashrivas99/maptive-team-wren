@@ -2,7 +2,7 @@ import os
 import random
 import json
 from flask import Flask, jsonify, make_response, request
-
+from collections import defaultdict
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -22,23 +22,28 @@ def create_app(test_config=None):
     # get all users in DB
     @app.route('/getAllUsers', methods=['GET'])
     def getAllUsers():
-        users_list = ''
+        user_dict = defaultdict(list)
+        # users_list = ''
         for user in query_db('select * from users'):
             print(user['username'], 'has the id', user['id'])
-            users_list = users_list+str(user['username'])+'\n'
+            # users_list = users_list+str(user['username'])+'\n'
+            user_dict['username'].append(user['username'])
+            print(user_dict)
 
-        return users_list
+        return user_dict
 
     # register new users
+    # add grade field
     @app.route('/registerUser', methods=['POST'])
     def registerUser():
         req_username = request.form.get('username')
+        req_grade = request.form.get('grade')
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
         if user is None:
             print('No such user')
-            insert_into_db('insert into users(username, questionnaire_filled) values (?,?)',
-                           (req_username, 'False'))
+            insert_into_db('insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
+                           (req_username, req_grade, 'False'))
             return 'New user added'
 
         else:
@@ -56,7 +61,8 @@ def create_app(test_config=None):
             return 'User does not exist'
         else:
             print(req_username, 'has the id', user['id'])
-        return {'username': user['username'], 'questionnaire_filled': user['questionnaire_filled']}
+        return {'username': user['username'], 'user_grade': user['user_grade'],
+                'questionnaire_filled': user['questionnaire_filled']}
 
     # get json question data
     @app.route('/question_data', methods=['GET'])
