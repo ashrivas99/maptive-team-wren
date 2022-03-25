@@ -18,6 +18,26 @@ export default function Form() {
         console.log(name)
         console.log(grade)
         const success = true;
+
+        let userData = {
+            username: name,
+            grade: grade
+          }
+  
+          fetch('http://127.0.0.1:5000/registerUser', {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(
+                userData
+            ),
+          }).then((response) => {
+            console.log(response.status + " 🍆");
+          }).catch((error) => {
+            console.error(error)
+          });
     }
 
     return (
