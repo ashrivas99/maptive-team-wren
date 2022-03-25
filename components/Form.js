@@ -23,7 +23,7 @@ export default function Form() {
     return (
         <div className='max-w-3xl mx-auto bg-blue-200 p-20 rounded-3xl flex-col space-y-5'>
             <div>
-                <label htmlFor="name" className="ml-px pl-4 block text-sm font-medium text-gray-700">
+                <label htmlFor="name" className="ml-px block text-sm font-medium text-gray-700">
                     Name
                 </label>
                 <div className="mt-1">
@@ -97,9 +97,14 @@ export default function Form() {
                     )}
                 </Listbox>
             </div>
-            <Link href="/question" >
-                <a><button onClick={() => registerUser(name, grade)}>Submit</button></a>
-            </Link>
+            <div className="flex justify-center items-center">
+                <button
+                    onClick={() => registerUser(name, grade)}
+                    type="button"
+                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Submit
+                </button>
+            </div>
         </div>
     )
 }
