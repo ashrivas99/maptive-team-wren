@@ -36,8 +36,9 @@ def create_app(test_config=None):
     # add grade field
     @app.route('/registerUser', methods=['POST'])
     def registerUser():
-        req_username = request.form.get('username')
-        req_grade = request.form.get('grade')
+        user_info = request.get_json()
+        req_username = user_info['username']
+        req_grade = user_info['grade']
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
         if user is None:
@@ -53,7 +54,8 @@ def create_app(test_config=None):
     # get existing user
     @app.route('/fetchUser', methods=['POST'])
     def fetchUser():
-        req_username = request.form.get('username')
+        user_info = request.get_json()
+        req_username = user_info['username']
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
         if user is None:
