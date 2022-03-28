@@ -14,18 +14,17 @@ export default function Form() {
     const [grade, setGrade] = useState(grades[3])
 
     const registerUser = async (name, grade) => {
-        // TODO: call backend to register user
-        console.log(name)
-        console.log(grade)
+        // TODO: call backend to register userx
         const success = true;
 
         let userData = {
-            username: name,
-            grade: grade
-          }
-  
-          fetch('http://127.0.0.1:5000/registerUser', {
+            "username": name,
+            "grade": parseInt(grade)
+        }
+
+        fetch('http://localhost:5000/registerUser', {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
               Accept: 'application/json',
               'Content-Type': 'application/json',
@@ -34,7 +33,7 @@ export default function Form() {
                 userData
             ),
           }).then((response) => {
-            console.log(response.status + " 🍆");
+            console.log(response);
           }).catch((error) => {
             console.error(error)
           });
@@ -118,12 +117,9 @@ export default function Form() {
                 </Listbox>
             </div>
             <div className="flex justify-center items-center">
-                <button
-                    onClick={() => registerUser(name, grade)}
-                    type="button"
-                    className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Submit
-                </button>
+                <Link href="/question" >
+                    <a><button onClick={() => registerUser(name, grade)}>Submit</button></a>
+                </Link>
             </div>
         </div>
     )

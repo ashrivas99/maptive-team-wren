@@ -36,7 +36,7 @@ def create_app(test_config=None):
     # add grade field
     @app.route('/registerUser', methods=['POST'])
     def registerUser():
-        user_info = request.get_json()
+        user_info = request.get_json(force=True)
         req_username = user_info['username']
         req_grade = user_info['grade']
         user = query_db('select * from users where username = ?',
