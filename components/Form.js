@@ -114,6 +114,10 @@ export default function Form() {
                     )}
                 </Listbox>
             </div>
+            <Link href="/questionnaire" >
+                <a><button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">Don't know your grade? Click here.</button></a>
+            </Link>
+
             <div className="flex justify-center items-center">
                 <Link href="/question" >
                     <a><button onClick={() => registerUser(name, grade)}>Submit</button></a>

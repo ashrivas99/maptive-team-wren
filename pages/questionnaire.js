@@ -1,28 +1,38 @@
 import { React, useState, useEffect } from "react";
-export default function Question() {
+import Link from "next/link"
+
+export default function Questionnaire() {
     const [data, setData] = useState(null)
+    const [numCorrect, setNumCorrect] = useState(0)
+    const [grade, setGrade] = useState(0)
     const [isLoading, setLoading] = useState(false)
     const [index, setIndex] = useState(0);
+    const [numQues, setNumQues] = useState(0);
     const answers = ["A", "B", "C", "D"];
     let [displayAnswer, setDisplayAnswer] = useState("false");
     let [correct, setCorrect] = useState("false");
     let answer = "A"
-    let username = localStorage.getItem("user")
+    let username = ""
 
     function changeQuestion() {
         setDisplayAnswer(false)
-        fetch('http://localhost:5000/pick_question', {
-            method: 'POST',
-            mode: 'cors',
-            body: JSON.stringify(
-                { "question": data[index], "correct": correct, "username": username }
-            ),
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data.index)
-                setIndex(data.index);
+        if (index < numQues - 1) {
+            setIndex(index + 1)
+        }
+        else {
+            fetch('http://localhost:5000/calculate_grade', {
+                method: 'POST',
+                mode: 'cors',
+                body: JSON.stringify(
+                    { "num_correct": numCorrect, "username": username }
+                ),
             })
+                .then((res) => res.json())
+                .then((data) => {
+                    setGrade(data.grade);
+                })
+
+        }
     }
 
     function textExists(question) {
@@ -66,6 +76,9 @@ export default function Question() {
     function checkAnswer(attempt) {
         setDisplayAnswer(true)
         correct = setCorrect(attempt == answer)
+        if (attempt == answer) {
+            setNumCorrect(numCorrect + 1)
+        }
     }
 
     function Answer() {
@@ -79,13 +92,23 @@ export default function Question() {
         }
         return <div></div>
     }
+
+    function NextButton() {
+        if (index == numQues - 1) {
+            return (<button onClick={changeQuestion}>Finish</button>)
+        }
+        else {
+            return (<button onClick={changeQuestion}>Next Question</button>)
+        }
+    }
+
     function Options() {
         return (
             <div>
                 {answers.map((item, ind) => (
                     <div key={ind}>
                         {answerTextExists(data[index], item) && <button onClick={() => checkAnswer(item)}>{data[index].mcq[item]["a_text"]}</button>}
-                        {answerImageExists(data[index], item) && <img src={"https://mathopolis.com/questions/" + data[index].mcq[item]["a_image"]}></img>}
+                        {answerImageExists(data[index], item) && <img onClick={() => checkAnswer(item)} src={"https://mathopolis.com/questions/" + data[index].mcq[item]["a_image"]}></img>}
                     </div>
                 ))}
             </div>
@@ -109,15 +132,17 @@ export default function Question() {
     }
 
     useEffect(() => {
+        username = localStorage.getItem("user")
         setLoading(true)
-        if (data == null) {
-            fetch('http://localhost:5000/question_data', {
+        if (numQues == 0) {
+            fetch('http://localhost:5000/pick_questionnaire_questions', {
                 method: 'GET',
                 mode: 'cors'
             })
                 .then((res) => res.json())
                 .then((data) => {
                     setData(data.data)
+                    setNumQues(data.data.length)
                     setQuestion(data.data)
                 })
         }
@@ -128,6 +153,14 @@ export default function Question() {
 
     if (isLoading) return <p>Loading...</p>
     if (!data) return <p>No profile data</p>
+    if (grade != 0) return (
+        <div>
+            <p>We have calculated that you are grade {grade}</p>
+            <Link href="/" >
+                <a><button>Return to sign-up page</button></a>
+            </Link>
+        </div>
+    )
 
     return (
         <div>
@@ -137,7 +170,7 @@ export default function Question() {
                     {imageExists(data[index]) && <img src={"https://mathopolis.com/questions/" + data[index].mcq.q_image}></img>}
                     <Options></Options>
                     <Answer></Answer>
-                    <button onClick={changeQuestion}> new question! </button>
+                    <NextButton></NextButton>
                 </div>
             </div>
         </div>

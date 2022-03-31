@@ -8,6 +8,7 @@ import flask
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
+    grades = ["1", "2", "3", "4", "5", "6", "7", "8", "G", "S", "A1", "A2"]
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
@@ -78,17 +79,48 @@ def create_app(test_config=None):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
+    # get json questionnaire questions for new user
+    @app.route('/pick_questionnaire_questions', methods=['GET'])
+    def pick_questionnaire_questions():
+        f = open('data_handling/data.json')
+        data = json.load(f)
+        questions = []
+        for grade in grades:
+            question = next(x for x in data if x["grade"] == grade)
+            questions.append(question)
+        response = jsonify({'data': questions})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
    # get json question choice
+    @app.route('/calculate_grade', methods=['POST'])
+    def calculate_grade():
+        questionnaire_info = request.get_json(force=True)
+        num_correct = questionnaire_info['num_correct']
+        username = questionnaire_info['username']
+
+        # TODO(user model people): Calculate grade using questionnaire.
+        print(num_correct)
+        print(username)
+        grade = 1
+
+        response = jsonify({'grade': grade})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
+    # get json question choice
     @app.route('/pick_question', methods=['POST'])
     def pick_question():
         question_info = request.get_json(force=True)
         question = question_info['question']
         correct = question_info['correct']
         username = question_info['username']
+
         # TODO(user model people): Do something with this info.
         print(question)
         print(correct)
         print(username)
+
         f = open('data_handling/data.json')
         data = json.load(f)
         new_index = random.randint(0, len(data))
