@@ -7,12 +7,16 @@ export default function Question() {
     let [displayAnswer, setDisplayAnswer] = useState("false");
     let [correct, setCorrect] = useState("false");
     let answer = "A"
+    let username = localStorage.getItem("user")
 
     function changeQuestion() {
         setDisplayAnswer(false)
         fetch('http://localhost:5000/pick_question', {
-            method: 'GET',
-            mode: 'cors'
+            method: 'POST',
+            mode: 'cors',
+            body: JSON.stringify(
+                { "question": data[index], "correct": correct, "username": username }
+            ),
         })
             .then((res) => res.json())
             .then((data) => {
@@ -65,7 +69,7 @@ export default function Question() {
     }
 
     function Answer() {
-        if (displayAnswer) {
+        if (displayAnswer == true) {
             if (correct == true) {
                 return (<p>You are correct! The answer is {answer}</p>)
             }

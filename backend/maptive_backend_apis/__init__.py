@@ -4,6 +4,8 @@ import json
 from flask import Flask, jsonify, make_response, request
 from collections import defaultdict
 
+import flask
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
@@ -41,15 +43,16 @@ def create_app(test_config=None):
         req_grade = user_info['grade']
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
+        response = flask.Response()
         if user is None:
             print('No such user')
             insert_into_db('insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
                            (req_username, req_grade, 'False'))
-            return 'New user added'
-
+            response = jsonify('New user added')
         else:
-            print(req_username, 'has the id', user['id'])
-        return 'User already exists'
+            response = jsonify(req_username, 'has the id', user['id'])
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
 
     # get existing user
     @app.route('/fetchUser', methods=['POST'])
@@ -76,8 +79,16 @@ def create_app(test_config=None):
         return response
 
    # get json question choice
-    @app.route('/pick_question', methods=['GET'])
+    @app.route('/pick_question', methods=['POST'])
     def pick_question():
+        question_info = request.get_json(force=True)
+        question = question_info['question']
+        correct = question_info['correct']
+        username = question_info['username']
+        # TODO(user model people): Do something with this info.
+        print(question)
+        print(correct)
+        print(username)
         f = open('data_handling/data.json')
         data = json.load(f)
         new_index = random.randint(0, len(data))

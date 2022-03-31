@@ -24,19 +24,17 @@ export default function Form() {
 
         fetch('http://localhost:5000/registerUser', {
             method: 'POST',
-            mode: 'no-cors',
-            headers: {
-              Accept: 'application/json',
-              'Content-Type': 'application/json',
-            },
+            mode: 'cors',
             body: JSON.stringify(
                 userData
             ),
-          }).then((response) => {
-            console.log(response);
-          }).catch((error) => {
-            console.error(error)
-          });
+        }).then((res) => res.json())
+            .then((data) => {
+                console.log(data)
+                localStorage.setItem("user", name)
+            }).catch((error) => {
+                console.error(error)
+            });
     }
 
     return (
