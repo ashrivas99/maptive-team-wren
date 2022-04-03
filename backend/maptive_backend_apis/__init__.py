@@ -45,6 +45,7 @@ def create_app(test_config=None):
         user = query_db('select * from users where username = ?',
                         [req_username], one=True)
         response = flask.Response()
+
         if user is None:
             print('No such user')
             insert_into_db('insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
@@ -54,6 +55,11 @@ def create_app(test_config=None):
             response = jsonify(req_username, 'has the id', user['id'])
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
+
+    # @app.route('/updateUser', methods=['POST'])
+    # def updateUser():
+    #     # TODO: After Monday Meeting
+    #     return None
 
     # get existing user
     @app.route('/fetchUser', methods=['POST'])
