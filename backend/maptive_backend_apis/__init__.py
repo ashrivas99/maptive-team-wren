@@ -1,6 +1,9 @@
 import os
 import random
 import json
+import sqlite3
+from flask import abort
+
 from flask import Flask, jsonify, make_response, request
 from collections import defaultdict
 
@@ -48,9 +51,14 @@ def create_app(test_config=None):
 
         if user is None:
             print('No such user')
-            insert_into_db('insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
-                           (req_username, req_grade, 'False'))
-            response = jsonify('New user added')
+            try:
+                insert_into_db('insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
+                               (req_username, req_grade, 'False'))
+                response = jsonify('New user added')
+            except sqlite3.IntegrityError as e:
+                print('Error Occured: ', e)
+                abort(400)
+
         else:
             response = jsonify(req_username, 'has the id', user['id'])
         response.headers.add('Access-Control-Allow-Origin', '*')
@@ -108,7 +116,7 @@ def create_app(test_config=None):
         # TODO(user model people): Calculate grade using questionnaire.
         print(num_correct)
         print(username)
-        grade = 1
+        grade = num_correct + 1
 
         response = jsonify({'grade': grade})
         response.headers.add('Access-Control-Allow-Origin', '*')
@@ -133,6 +141,40 @@ def create_app(test_config=None):
         response = jsonify({'index': new_index})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
+
+
+    def grade_reccomender_for_category(username):
+        # TODO:
+        # This would recommend a newer or same grade depending on the win/loss rate.
+        # If the user agrees to the next grade then the front end can request a question for grade+1 and category
+        # we would also update the current grade and category of the user in the users table
+        current_user = query_db('select * from users where username = ?',
+                        username, one=True)
+
+        current_user_grade = current_user['user_grade']
+        current_user_category = current_user['current_category']
+
+        curruser_model_data = query_db('select * from user_model where username = ? and category_attempted =? and grade_attempted =?',
+                        [username, current_user_category, current_user_grade], one=True)
+
+        total_correct = curruser_model_data['total_correct']
+        total_wrong = curruser_model_data['total_wrong']
+
+        total_attempted = total_correct + total_wrong
+        win_rate = total_correct/total_attempted
+        loss_rate = total_wrong/total_attempted
+
+        if win_rate > 0.8:
+            print('reccomend next grade')
+
+        elif win_rate < 0.25:
+            print('recommend previous grade quesiton of same category')
+
+        else:
+            print('Do nothing')
+
+
+
 
     # below api not needed? review
 

@@ -18,12 +18,14 @@ CREATE TABLE user_model (
   grade_attempted TEXT NOT NULL,
   difficulty INTEGER NOT NULL,
   total_correct INTEGER NOT NULL DEFAULT 0,
-  total_wrong INTEGER NOT NULL DEFAULT 0
+  total_wrong INTEGER NOT NULL DEFAULT 0,
+  CONSTRAINT pk_user_model PRIMARY KEY (username, category_attempted, grade_attempted)
 );
 
 CREATE TABLE attempted_questions (
     username TEXT UNIQUE NOT NULL,
     question_id TEXT UNIQUE NOT NULL,
-    answered_correctly INTEGER NOT NULL DEFAULT 0
+    answered_correctly INTEGER NOT NULL DEFAULT 0,
+    CONSTRAINT pk_attempted_questions PRIMARY KEY (username)
 );
 
