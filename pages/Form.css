@@ -1,0 +1,26 @@
+#scrollbox {
+    margin: auto;
+    font: 2vw system-ui;
+    background-color: white;
+    place-items: center;
+    overflow: scroll;
+    width: 600px;
+    height: 200px;
+    }
+
+#scrollbox button {
+    margin: 10px;
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+    mix-blend-mode: multiply;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 11px;
+    position: relative;
+    font-family: "Baloo 2", cursive;
+    }

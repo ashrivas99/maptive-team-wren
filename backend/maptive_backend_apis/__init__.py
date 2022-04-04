@@ -9,9 +9,17 @@ from collections import defaultdict
 
 import flask
 
+grades = ["1", "2", "3", "4", "5", "6", "7", "8", "G", "S", "A1", "A2"]
+gradeMappings = {
+    "Geometry": "G",
+    "Statistics": "S",
+    "Algebra 1": "A1",
+    "Algebra 2": "A2"
+}
+
+
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
-    grades = ["1", "2", "3", "4", "5", "6", "7", "8", "G", "S", "A1", "A2"]
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
@@ -45,15 +53,20 @@ def create_app(test_config=None):
         user_info = request.get_json(force=True)
         req_username = user_info['username']
         req_grade = user_info['grade']
+        categories = user_info['categories']
+        # TODO(do something with this)
+        print(categories)
         user = query_db('select * from users where username = ?',
-                        [req_username], one=True)
+                        [req_username],
+                        one=True)
         response = flask.Response()
 
         if user is None:
             print('No such user')
             try:
-                insert_into_db('insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
-                               (req_username, req_grade, 'False'))
+                insert_into_db(
+                    'insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
+                    (req_username, req_grade, 'False'))
                 response = jsonify('New user added')
             except sqlite3.IntegrityError as e:
                 print('Error Occured: ', e)
@@ -75,14 +88,18 @@ def create_app(test_config=None):
         user_info = request.get_json()
         req_username = user_info['username']
         user = query_db('select * from users where username = ?',
-                        [req_username], one=True)
+                        [req_username],
+                        one=True)
         if user is None:
             print('No such user')
             return 'User does not exist'
         else:
             print(req_username, 'has the id', user['id'])
-        return {'username': user['username'], 'user_grade': user['user_grade'],
-                'questionnaire_filled': user['questionnaire_filled']}
+        return {
+            'username': user['username'],
+            'user_grade': user['user_grade'],
+            'questionnaire_filled': user['questionnaire_filled']
+        }
 
     # get json question data
     @app.route('/question_data', methods=['GET'])
@@ -90,6 +107,25 @@ def create_app(test_config=None):
         f = open('data_handling/data.json')
         data = json.load(f)
         response = jsonify({'data': data})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
+    # get json question data
+    @app.route('/getCategories', methods=['POST'])
+    def get_grade_categories():
+        user_info = request.get_json(force=True)
+        req_grade = user_info['grade']
+        grade = req_grade
+        if req_grade.isnumeric() == False:
+            grade = gradeMappings[req_grade]
+        grade_cats = set()
+        f = open('data_handling/data.json')
+        data = json.load(f)
+        for item in data:
+            if item["grade"] == grade:
+                grade_cats.add(item["category"])
+        grade_cats = list(grade_cats)
+        response = jsonify({'categories': list(grade_cats)})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
@@ -103,22 +139,6 @@ def create_app(test_config=None):
             question = next(x for x in data if x["grade"] == grade)
             questions.append(question)
         response = jsonify({'data': questions})
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
-
-   # get json question choice
-    @app.route('/calculate_grade', methods=['POST'])
-    def calculate_grade():
-        questionnaire_info = request.get_json(force=True)
-        num_correct = questionnaire_info['num_correct']
-        username = questionnaire_info['username']
-
-        # TODO(user model people): Calculate grade using questionnaire.
-        print(num_correct)
-        print(username)
-        grade = num_correct + 1
-
-        response = jsonify({'grade': grade})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
@@ -142,27 +162,29 @@ def create_app(test_config=None):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
-
     def grade_reccomender_for_category(username):
         # TODO:
         # This would recommend a newer or same grade depending on the win/loss rate.
         # If the user agrees to the next grade then the front end can request a question for grade+1 and category
         # we would also update the current grade and category of the user in the users table
         current_user = query_db('select * from users where username = ?',
-                        username, one=True)
+                                username,
+                                one=True)
 
         current_user_grade = current_user['user_grade']
         current_user_category = current_user['current_category']
 
-        curruser_model_data = query_db('select * from user_model where username = ? and category_attempted =? and grade_attempted =?',
-                        [username, current_user_category, current_user_grade], one=True)
+        curruser_model_data = query_db(
+            'select * from user_model where username = ? and category_attempted =? and grade_attempted =?',
+            [username, current_user_category, current_user_grade],
+            one=True)
 
         total_correct = curruser_model_data['total_correct']
         total_wrong = curruser_model_data['total_wrong']
 
         total_attempted = total_correct + total_wrong
-        win_rate = total_correct/total_attempted
-        loss_rate = total_wrong/total_attempted
+        win_rate = total_correct / total_attempted
+        loss_rate = total_wrong / total_attempted
 
         if win_rate > 0.8:
             print('reccomend next grade')
@@ -172,9 +194,6 @@ def create_app(test_config=None):
 
         else:
             print('Do nothing')
-
-
-
 
     # below api not needed? review
 

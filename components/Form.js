@@ -1,25 +1,32 @@
 import React, { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, SelectorIcon } from "@heroicons/react/solid";
+import { CheckIcon, SelectorIcon, StatusOfflineIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 
-const grades = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const grades = ["1", "2", "3", "4", "5", "6", "7", "8", "Geometry", "Statistics", "Algebra 1", "Algebra 2"]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Form() {
-  const [name, setName] = useState(null);
-  const [grade, setGrade] = useState(grades[3]);
+  const [name, setName] = useState("");
+  const [selectedCats, setSelectedCats] = useState([]);
+  const [cats, setCats] = useState(
+    ["Counting", "Addition", "Subtraction", "Numbers",
+      "Geometry (Plane)", "Geometry (Solid)", "Pre-Algebra",
+      "Estimation", "Probability", "Money"]
+  );
+  const [grade, setGrade] = useState(grades[0]);
+  const [categoryBox, setCategoryBox] = useState(Categories(cats))
 
   const registerUser = async (name, grade) => {
-    // TODO: call backend to register userx
     const success = true;
 
     let userData = {
       username: name,
       grade: parseInt(grade),
+      categories: selectedCats
     };
 
     fetch("http://localhost:5000/registerUser", {
@@ -37,8 +44,59 @@ export default function Form() {
       });
   };
 
+  function addCat(cat) {
+    const index = selectedCats.indexOf(cat);
+    if (index > -1) {
+      selectedCats.splice(index, 1);
+      setSelectedCats(selectedCats)
+      const btn = document.getElementById(cat);
+      btn.style.backgroundColor = 'lightblue';
+    }
+    else {
+      selectedCats.push(cat);
+      setSelectedCats(selectedCats)
+      const btn = document.getElementById(cat);
+      btn.style.backgroundColor = 'green';
+    }
+  }
+
+  function makeButton(cat) {
+    return (
+      <button key={cat} id={cat} onClick={() => addCat(cat)}>
+        {cat}
+      </button>
+    );
+  }
+
+  function stuff(value) {
+    setGrade(value)
+    fetch("http://localhost:5000/getCategories", {
+      method: "POST",
+      mode: "cors",
+      body: JSON.stringify({ "grade": value }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setSelectedCats([])
+        setCats(data.categories)
+        setCategoryBox(Categories(data.categories))
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }
+
+  function Categories(cats) {
+    return (
+      <div id="scrollbox">
+        {cats.map(makeButton, this)}
+      </div>
+    )
+  }
+
   return (
     <div className="max-w-3xl mx-auto bg-blue-200 p-20 rounded-3xl flex-col space-y-5">
+      <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet"></link>
       <div>
         <label
           htmlFor="name"
@@ -59,7 +117,7 @@ export default function Form() {
         </div>
       </div>
       <div>
-        <Listbox value={grade} onChange={setGrade}>
+        <Listbox id="lb" value={grade} onChange={(value) => stuff(value)}>
           {({ open }) => (
             <>
               <Listbox.Label className="block text-sm font-medium text-gray-700">
@@ -139,7 +197,9 @@ export default function Form() {
           </button>
         </a>
       </Link>
-
+      <br></br>
+      <p>Pick some categories you are interested in for this grade</p>
+      {categoryBox}
       <div className="flex justify-center items-center">
         <Link href="/question">
           <a>
