@@ -11,6 +11,7 @@ function classNames(...classes) {
 
 export default function Form() {
   const [name, setName] = useState("");
+  const [newUser, setNewUser] = useState(true);
   const [selectedCats, setSelectedCats] = useState([]);
   const [cats, setCats] = useState(
     ["Counting", "Addition", "Subtraction", "Numbers",
@@ -94,15 +95,122 @@ export default function Form() {
     )
   }
 
+  function SignUp() {
+    if (newUser == false) {
+      return (<p> If you do not have an account: <button onClick={() => { setNewUser(true) }} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign Up</button></p>)
+    }
+    else {
+      return (
+        <div>
+          <Listbox id="lb" value={grade} onChange={(value) => stuff(value)}>
+            {({ open }) => (
+              <>
+                <Listbox.Label className="block text-sm font-medium text-gray-700">
+                  Select a Grade
+                </Listbox.Label>
+                <div className="mt-1 relative">
+                  <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    <span className="block truncate">Grade {grade}</span>
+                    <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+                      <SelectorIcon
+                        className="h-5 w-5 text-gray-400"
+                        aria-hidden="true"
+                      />
+                    </span>
+                  </Listbox.Button>
+
+                  <Transition
+                    show={open}
+                    as={Fragment}
+                    leave="transition ease-in duration-100"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <Listbox.Options className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
+                      {grades.map((currGrade) => (
+                        <Listbox.Option
+                          key={currGrade}
+                          className={({ active }) =>
+                            classNames(
+                              active
+                                ? "text-white bg-indigo-600"
+                                : "text-gray-900",
+                              "cursor-default select-none relative py-2 pl-8 pr-4"
+                            )
+                          }
+                          value={currGrade}
+                        >
+                          {({ selected, active }) => (
+                            <>
+                              <span
+                                className={classNames(
+                                  selected ? "font-semibold" : "font-normal",
+                                  "block truncate"
+                                )}
+                              >
+                                {currGrade}
+                              </span>
+
+                              {selected ? (
+                                <span
+                                  className={classNames(
+                                    active ? "text-white" : "text-indigo-600",
+                                    "absolute inset-y-0 left-0 flex items-center pl-1.5"
+                                  )}
+                                >
+                                  <CheckIcon
+                                    className="h-5 w-5"
+                                    aria-hidden="true"
+                                  />
+                                </span>
+                              ) : null}
+                            </>
+                          )}
+                        </Listbox.Option>
+                      ))}
+                    </Listbox.Options>
+                  </Transition>
+                </div>
+              </>
+            )}
+          </Listbox>
+          <Link href="/questionnaire">
+            <a>
+            Don't know your grade? 
+              <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Click here.
+              </button>
+            </a>
+          </Link>
+          <br></br>
+          <br></br>
+          <p>Pick some categories you are interested in for this grade</p>
+          {categoryBox}
+          <br></br>
+          <p> If you already have an account: <button onClick={() => { setNewUser(false) }} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Log-In</button></p>
+        </div>
+      )
+    }
+  }
+
+  function Title() {
+    if (newUser == true) {
+      return (<p id="header">Register Page</p>)
+    }
+    else {
+      return (<p id="header">Log-In Page</p>)
+    }
+  }
   return (
     <div className="max-w-3xl mx-auto bg-blue-200 p-20 rounded-3xl flex-col space-y-5">
+      <Title></Title>
       <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet"></link>
       <div>
         <label
           htmlFor="name"
           className="ml-px block text-sm font-medium text-gray-700"
         >
-          Name
+          Username
         </label>
         <div className="mt-1">
           <input
@@ -110,102 +218,22 @@ export default function Form() {
             name="name"
             id="name"
             className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 px-4 py-2 rounded-full"
-            placeholder="Please provide your name..."
+            placeholder="Please enter your username..."
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
       </div>
       <div>
-        <Listbox id="lb" value={grade} onChange={(value) => stuff(value)}>
-          {({ open }) => (
-            <>
-              <Listbox.Label className="block text-sm font-medium text-gray-700">
-                Select a Grade
-              </Listbox.Label>
-              <div className="mt-1 relative">
-                <Listbox.Button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                  <span className="block truncate">Grade {grade}</span>
-                  <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-                    <SelectorIcon
-                      className="h-5 w-5 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </span>
-                </Listbox.Button>
-
-                <Transition
-                  show={open}
-                  as={Fragment}
-                  leave="transition ease-in duration-100"
-                  leaveFrom="opacity-100"
-                  leaveTo="opacity-0"
-                >
-                  <Listbox.Options className="absolute z-10 mt-1 w-full bg-white shadow-lg max-h-60 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm">
-                    {grades.map((currGrade) => (
-                      <Listbox.Option
-                        key={currGrade}
-                        className={({ active }) =>
-                          classNames(
-                            active
-                              ? "text-white bg-indigo-600"
-                              : "text-gray-900",
-                            "cursor-default select-none relative py-2 pl-8 pr-4"
-                          )
-                        }
-                        value={currGrade}
-                      >
-                        {({ selected, active }) => (
-                          <>
-                            <span
-                              className={classNames(
-                                selected ? "font-semibold" : "font-normal",
-                                "block truncate"
-                              )}
-                            >
-                              {currGrade}
-                            </span>
-
-                            {selected ? (
-                              <span
-                                className={classNames(
-                                  active ? "text-white" : "text-indigo-600",
-                                  "absolute inset-y-0 left-0 flex items-center pl-1.5"
-                                )}
-                              >
-                                <CheckIcon
-                                  className="h-5 w-5"
-                                  aria-hidden="true"
-                                />
-                              </span>
-                            ) : null}
-                          </>
-                        )}
-                      </Listbox.Option>
-                    ))}
-                  </Listbox.Options>
-                </Transition>
-              </div>
-            </>
-          )}
-        </Listbox>
-      </div>
-      <Link href="/questionnaire">
-        <a>
-          <button className="relative w-full bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-            Don't know your grade? Click here.
-          </button>
-        </a>
-      </Link>
-      <br></br>
-      <p>Pick some categories you are interested in for this grade</p>
-      {categoryBox}
-      <div className="flex justify-center items-center">
-        <Link href="/question">
-          <a>
-            <button onClick={() => registerUser(name, grade)}>Submit</button>
-          </a>
-        </Link>
+        <SignUp></SignUp>
+        <br></br>
+        <div className="flex justify-center items-center">
+          <Link href="/question">
+            <a>
+              <button onClick={() => registerUser(name, grade)} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+            </a>
+          </Link>
+        </div>
       </div>
     </div>
   );

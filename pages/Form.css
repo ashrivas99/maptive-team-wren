@@ -24,3 +24,11 @@
     position: relative;
     font-family: "Baloo 2", cursive;
     }
+
+#header {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    color: navy;
+    font-size: 20px;
+}
