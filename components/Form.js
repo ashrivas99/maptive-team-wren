@@ -1,8 +1,10 @@
 import React, { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
-import { CheckIcon, SelectorIcon, StatusOfflineIcon } from "@heroicons/react/solid";
+import { CheckIcon, SelectorIcon, StatusOfflineIcon, CalculatorIcon, BriefcaseIcon, 
+  ChartPieIcon, ChartBarIcon, PencilIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 import { useRouter } from "next/router";
+
 
 const grades = ["1", "2", "3", "4", "5", "6", "7", "8", "Geometry", "Statistics", "Algebra 1", "Algebra 2"]
 
@@ -100,7 +102,12 @@ export default function Form() {
 
   function SignUp() {
     if (newUser == false) {
-      return (<p> If you do not have an account: <button onClick={() => { setNewUser(true) }} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign Up</button></p>)
+      return (
+          <div className="flex items-center space-x-5 mt-7">
+            <p className="text-md font-medium text-gray-700">If you do not have an account:</p>
+            <button onClick={() => { setNewUser(true) }} 
+            className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Sign Up</button>
+          </div>)
     }
     else {
       return (
@@ -201,10 +208,21 @@ export default function Form() {
 
   function Title() {
     if (newUser == true) {
-      return (<p id="header" className="text-3xl text-center mb-7 text-blue-800">Register Page</p>)
+      return (
+      <div className="flex justify-center items-center space-x-6 mb-7">
+        <ChartPieIcon className="h-10 text-yellow-700"/>
+        <p id="header" className="text-3xl text-center text-blue-800">Register Page</p>
+        <CalculatorIcon className="h-10 text-red-700"/>
+      </div>)
     }
     else {
-      return (<p id="header" className="text-3xl text-center mb-7 text-blue-800">Log-In Page</p>)
+      return (
+        <div className="flex justify-center items-center space-x-6 mb-7">
+          <ChartBarIcon className="h-10 text-purple-700"/>
+          <p id="header" className="text-3xl text-center text-blue-800">Log-In Page</p>
+          <PencilIcon className="h-10 text-orange-700"/>
+      </div>
+      )
     }
   }
   return (
