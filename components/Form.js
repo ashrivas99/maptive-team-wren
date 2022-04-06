@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, SelectorIcon, StatusOfflineIcon } from "@heroicons/react/solid";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const grades = ["1", "2", "3", "4", "5", "6", "7", "8", "Geometry", "Statistics", "Algebra 1", "Algebra 2"]
 
@@ -20,6 +21,8 @@ export default function Form() {
   );
   const [grade, setGrade] = useState(grades[0]);
   const [categoryBox, setCategoryBox] = useState(Categories(cats))
+
+  const router = useRouter();
 
   const registerUser = async (name, grade) => {
     const success = true;
@@ -174,20 +177,23 @@ export default function Form() {
               </>
             )}
           </Listbox>
-          <Link href="/questionnaire">
-            <a>
-            Don't know your grade? 
-              <button className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <div className="flex items-center mt-7">
+            <div className="flex items-center space-x-5">
+              <p className="text-md font-medium text-gray-700">Don't know your grade? </p>
+              <button onClick={() => router.push("/questionnaire")} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                 Click here.
               </button>
-            </a>
-          </Link>
+            </div>
+          </div>
           <br></br>
           <br></br>
-          <p>Pick some categories you are interested in for this grade</p>
+          <p className="text-xl text-center pb-4 text-blue-800">Pick some categories you are interested in for this grade</p>
           {categoryBox}
           <br></br>
-          <p> If you already have an account: <button onClick={() => { setNewUser(false) }} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Log-In</button></p>
+          <div className="flex items-center space-x-5 mt-5">
+            <p className="text-md font-medium text-gray-700"> If you already have an account:</p>
+            <button onClick={() => { setNewUser(false) }} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Log-In</button>
+          </div>
         </div>
       )
     }
@@ -195,14 +201,14 @@ export default function Form() {
 
   function Title() {
     if (newUser == true) {
-      return (<p id="header">Register Page</p>)
+      return (<p id="header" className="text-3xl text-center mb-7 text-blue-800">Register Page</p>)
     }
     else {
-      return (<p id="header">Log-In Page</p>)
+      return (<p id="header" className="text-3xl text-center mb-7 text-blue-800">Log-In Page</p>)
     }
   }
   return (
-    <div className="max-w-3xl mx-auto bg-blue-200 p-20 rounded-3xl flex-col space-y-5">
+    <div className="max-w-3xl mx-auto bg-blue-200 p-16 rounded-3xl flex-col space-y-5">
       <Title></Title>
       <link href="https://fonts.googleapis.com/css?family=Baloo+2:400,800&display=swap" rel="stylesheet"></link>
       <div>
@@ -230,7 +236,8 @@ export default function Form() {
         <div className="flex justify-center items-center">
           <Link href="/question">
             <a>
-              <button onClick={() => registerUser(name, grade)} className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Submit</button>
+              <button onClick={() => registerUser(name, grade)} 
+              className="mt-5 inline-flex items-center px-12 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Submit</button>
             </a>
           </Link>
         </div>

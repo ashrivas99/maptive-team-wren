@@ -5,7 +5,7 @@
     place-items: center;
     overflow: scroll;
     width: 600px;
-    height: 200px;
+    height: 240px;
     }
 
 #scrollbox button {
@@ -26,9 +26,9 @@
     }
 
 #header {
-    padding: 20px;
+    /* padding: 20px;
     text-align: center;
     background: white;
     color: navy;
-    font-size: 20px;
+    font-size: 20px; */
 }
