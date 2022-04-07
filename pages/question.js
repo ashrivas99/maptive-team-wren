@@ -6,7 +6,7 @@ export default function Question() {
     const answers = ["A", "B", "C", "D"];
     let [displayAnswer, setDisplayAnswer] = useState("false");
     let [correct, setCorrect] = useState("false");
-    let answer = "A"
+    let [answer, setAnswer] = useState("A");
     let username = localStorage.getItem("user")
 
     function changeQuestion() {
@@ -20,7 +20,6 @@ export default function Question() {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data.index)
                 setIndex(data.index);
             })
     }
@@ -66,7 +65,6 @@ export default function Question() {
     function checkAnswer(attempt) {
         setDisplayAnswer(true)
         correct = setCorrect(attempt == answer)
-        console.log(attempt)
     }
 
     function Answer() {
@@ -136,16 +134,16 @@ export default function Question() {
 
     function setQuestion(questions) {
         if (questions[index].mcq["A"]["correct"] == true) {
-            answer = "A"
+            setAnswer("A");
         }
         if (questions[index].mcq["B"]["correct"] == true) {
-            answer = "B"
+            setAnswer("B");
         }
         if (questions[index].mcq["C"]["correct"] == true) {
-            answer = "C"
+            setAnswer("C");
         }
         if (questions[index].mcq["D"]["correct"] == true) {
-            answer = "D"
+            setAnswer("D");
         }
         setLoading(false)
     }

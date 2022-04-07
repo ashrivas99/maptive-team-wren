@@ -11,13 +11,14 @@ export default function Questionnaire() {
   const answers = ["A", "B", "C", "D"];
   let [displayAnswer, setDisplayAnswer] = useState("false");
   let [correct, setCorrect] = useState("false");
-  let answer = "A";
+  let [answer, setAnswer] = useState("A");
   let username = "";
 
   function changeQuestion() {
     setDisplayAnswer(false);
     if (index < numQues - 1) {
       setIndex(index + 1);
+      setQuestion(data);
     } else {
       setGrade(numCorrect >= 10 ? 10 : numCorrect + 1);
     }
@@ -115,16 +116,16 @@ export default function Questionnaire() {
 
   function setQuestion(questions) {
     if (questions[index].mcq["A"]["correct"] == true) {
-      answer = "A";
+      setAnswer("A");
     }
     if (questions[index].mcq["B"]["correct"] == true) {
-      answer = "B";
+      setAnswer("B");
     }
     if (questions[index].mcq["C"]["correct"] == true) {
-      answer = "C";
+      setAnswer("C");
     }
     if (questions[index].mcq["D"]["correct"] == true) {
-      answer = "D";
+      setAnswer("D");
     }
     setLoading(false);
   }
