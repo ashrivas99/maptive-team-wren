@@ -66,29 +66,71 @@ export default function Question() {
     function checkAnswer(attempt) {
         setDisplayAnswer(true)
         correct = setCorrect(attempt == answer)
+        console.log(attempt)
     }
 
     function Answer() {
         if (displayAnswer == true) {
             if (correct == true) {
-                return (<p>You are correct! The answer is {answer}</p>)
+                return (
+                <div className="flex items-center space-x-3">
+                    <p className="text-green-500 text-lg font-bold">You are correct! The answer is {answer}</p>
+                    <p className="text-3xl">🙌</p>
+                </div>)
             }
             else {
-                return (<p>You were incorrect. The answer is {answer}</p>)
+                return (
+                <div className="flex items-center space-x-3">
+                    <p className="text-red-500 text-lg font-bold">You are incorrect! The answer was {answer}</p>
+                    <p className="text-3xl">😢</p>
+                </div>)
             }
         }
         return <div></div>
     }
     function Options() {
         return (
-            <div>
-                {answers.map((item, ind) => (
-                    <div key={ind}>
-                        {answerTextExists(data[index], item) && <button onClick={() => checkAnswer(item)}>{data[index].mcq[item]["a_text"]}</button>}
-                        {answerImageExists(data[index], item) && <img src={"https://mathopolis.com/questions/" + data[index].mcq[item]["a_image"]}></img>}
+            // <div>
+            //     {answers.map((item, ind) => (
+            //         <div key={ind}>
+            //             {answerTextExists(data[index], item) && <button onClick={() => checkAnswer(item)}>{data[index].mcq[item]["a_text"]}</button>}
+            //             {answerImageExists(data[index], item) && <img src={"https://mathopolis.com/questions/" + data[index].mcq[item]["a_image"]}></img>}
+            //         </div>
+            //     ))}
+            // </div>
+            <div className="mt-5">
+                <label className="text-base font-medium text-gray-900">Possible answers for the question</label>
+                <p className="text-sm leading-5 text-gray-500">Choose one of the answers below:</p>
+                <fieldset className="mt-4">
+                    <legend className="sr-only">Select answer</legend>
+                    <div className="space-y-4">
+                        {answers.map((answerOption, ind) => (
+                            <div key={ind} className="flex items-center">
+                                <input onClick={() => {
+                                    if (answerTextExists(data[index], answerOption)){
+                                        checkAnswer(answerOption)
+                                    }
+                                    
+                                }}
+                                    id={ind}
+                                    name="answer-selection"
+                                    type="radio"
+                                    //defaultChecked={answerOption.id === 'email'}
+                                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                />
+                                {answerTextExists(data[index], answerOption) && <label htmlFor={ind} className="ml-3 block text-sm font-medium text-gray-700">
+                                                                                    {data[index].mcq[answerOption]["a_text"]}
+                                                                                </label>}
+                                
+
+                                {answerImageExists(data[index], answerOption) && <label htmlFor={ind} className="ml-3 block text-sm font-medium text-gray-700">
+                                                                                    {data[index].mcq[answerOption]["a_text"]}
+                                                                                </label>}
+                            </div>
+                        ))}
                     </div>
-                ))}
-            </div>
+                </fieldset>
+          </div>
         );
     }
 
@@ -130,16 +172,18 @@ export default function Question() {
     if (!data) return <p>No profile data</p>
 
     return (
-        <div>
-            <div>
+            <div className="h-screen flex items-center justify-center">
                 <div>
-                    {textExists(data[index]) && <p>{data[index].mcq.q_text}</p>}
+                    {textExists(data[index]) && <p className="text-center p-5 text-2xl font-bold text-indigo-700">{data[index].mcq.q_text}</p>}
                     {imageExists(data[index]) && <img src={"https://mathopolis.com/questions/" + data[index].mcq.q_image}></img>}
                     <Options></Options>
                     <Answer></Answer>
-                    <button onClick={changeQuestion}> new question! </button>
+                    <div className="flex items-center justify-center mt-7">
+                        <button className="px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" 
+                                onClick={changeQuestion}> new question! </button>
+                    </div>
                 </div>
+            
             </div>
-        </div>
     )
 }
