@@ -51,11 +51,13 @@ def create_app(test_config=None):
     @app.route('/registerUser', methods=['POST'])
     def registerUser():
         user_info = request.get_json(force=True)
+
         req_username = user_info['username']
         req_grade = user_info['grade']
         categories = user_info['categories']
-        # TODO(do something with this)
-        print(categories)
+
+        categories_string = ','.join(categories)
+
         user = query_db('select * from users where username = ?',
                         [req_username],
                         one=True)
@@ -65,8 +67,8 @@ def create_app(test_config=None):
             print('No such user')
             try:
                 insert_into_db(
-                    'insert into users(username, user_grade, questionnaire_filled) values (?,?, ?)',
-                    (req_username, req_grade, 'False'))
+                    'insert into users(username, user_grade, user_categories, questionnaire_filled, current_category) values (?,?,?,?,?)',
+                    (req_username, req_grade, categories_string, 'False', categories[0]))
                 response = jsonify('New user added')
             except sqlite3.IntegrityError as e:
                 print('Error Occured: ', e)

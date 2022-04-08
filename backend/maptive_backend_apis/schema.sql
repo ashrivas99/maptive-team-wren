@@ -15,11 +15,11 @@ CREATE TABLE users (
 CREATE TABLE user_model (
   username TEXT UNIQUE NOT NULL,
   category_attempted TEXT NOT NULL,
-  grade_attempted TEXT NOT NULL,
   difficulty INTEGER NOT NULL,
+  grade_attempted TEXT NOT NULL,
   total_correct INTEGER NOT NULL DEFAULT 0,
   total_wrong INTEGER NOT NULL DEFAULT 0,
-  CONSTRAINT pk_user_model PRIMARY KEY (username, category_attempted, grade_attempted)
+  CONSTRAINT pk_user_model PRIMARY KEY (username, category_attempted, difficulty)
 );
 
 CREATE TABLE attempted_questions (
