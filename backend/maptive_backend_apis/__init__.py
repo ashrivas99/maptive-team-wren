@@ -2,6 +2,8 @@ import os
 import random
 import json
 import sqlite3
+from pprint import pprint
+
 from flask import abort
 
 from flask import Flask, jsonify, make_response, request
@@ -85,6 +87,7 @@ def create_app(test_config=None):
     #     return None
 
     # get existing user
+
     @app.route('/fetchUser', methods=['POST'])
     def fetchUser():
         user_info = request.get_json()
@@ -144,6 +147,15 @@ def create_app(test_config=None):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
+    def store_correct_submissions(question, correct, username):
+        try:
+            insert_into_db(
+                'insert into attempted_questions(username, question_id, answered_correctly) values (?,?,?)',
+                (username, question['skillno'], correct))
+        except sqlite3.IntegrityError as e:
+            print('Error Occured: ', e)
+            pass
+
     # get json question choice
     @app.route('/pick_question', methods=['POST'])
     def pick_question():
@@ -152,14 +164,27 @@ def create_app(test_config=None):
         correct = question_info['correct']
         username = question_info['username']
 
-        # TODO(user model people): Do something with this info.
-        print(question)
-        print(correct)
-        print(username)
+        try:
+            if correct:
+                store_correct_submissions(question, correct, username)
+        except Exception as e:
+            print(f'Exception Occured {e}')
+            pass
+
+        # # TODO(user model people): Do something with this info.
+        #
+        # Only return the question if the user has not gotten it correct
+        avoid_question_query = query_db('select question_id from attempted_questions where username = ?',
+                                      [username])
+
+        avoid_questions_dict = {}
+        for idx in avoid_question_query:
+            avoid_questions_dict[idx['question_id']] = 1
 
         f = open('data_handling/data.json')
         data = json.load(f)
         new_index = random.randint(0, len(data))
+
         response = jsonify({'index': new_index})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response

@@ -13,7 +13,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE user_model (
-  username TEXT UNIQUE NOT NULL,
+  username TEXT NOT NULL,
   category_attempted TEXT NOT NULL,
   difficulty INTEGER NOT NULL,
   grade_attempted TEXT NOT NULL,
@@ -23,9 +23,9 @@ CREATE TABLE user_model (
 );
 
 CREATE TABLE attempted_questions (
-    username TEXT UNIQUE NOT NULL,
+    username TEXT NOT NULL,
     question_id TEXT UNIQUE NOT NULL,
     answered_correctly INTEGER NOT NULL DEFAULT 0,
-    CONSTRAINT pk_attempted_questions PRIMARY KEY (username)
+    CONSTRAINT pk_attempted_questions PRIMARY KEY (username, question_id)
 );
 
