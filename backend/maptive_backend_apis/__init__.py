@@ -185,9 +185,11 @@ def create_app(test_config=None):
                             [username],
                             one=True)
             total_correct = int(user['total_correct']) + \
-                (1 if correct == True else 0)
+                (1 if correct else 0)
             total_incorrect = int(user['total_incorrect']) + \
-                (1 if correct == False else 0)
+                (1 if not correct else 0)
+            print("Total Correct:", total_correct,
+                  "Total Incorrect:", total_incorrect)
             update_db('update users set total_correct=?,total_incorrect=? where username = ?',
                       (total_correct, total_incorrect, username))
             print(query_db('select * from users'))  # debug
@@ -242,7 +244,7 @@ def create_app(test_config=None):
             user_data['total_incorrect']
         # do this for every 10th question attempted or when no more valid questions left in current grade
         grade_change = "NONE"
-        if total_attempted % 10 == 0 or not valid_question_ids:
+        if total_attempted != 0 and total_attempted % 10 == 0 or not valid_question_ids:        # avoid division by 0
             grade_change = grade_reccomendation(
                 user_data['total_correct'], total_attempted)
             update_user_grade(username, grade_change)
