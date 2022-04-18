@@ -281,10 +281,7 @@ def create_app(test_config=None):
             return 'NONE'
 
     # grade update based on user response
-    # @app.route('/updateUserGrade', methods=['POST'])
     def update_user_grade(username, grade_change):
-        # req_data = request.get_json()
-        # username = req_data['username']
         user = query_db('select * from users where username=?',
                         [username], one=True)
 
