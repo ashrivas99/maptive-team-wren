@@ -245,6 +245,7 @@ def create_app(test_config=None):
         if total_attempted % 10 == 0 or not valid_question_ids:
             grade_change = grade_reccomendation(
                 user_data['total_correct'], total_attempted)
+            update_user_grade(username, grade_change)
 
         response = jsonify({'index': next_index, 'grade_update': grade_change})
         response.headers.add('Access-Control-Allow-Origin', '*')
@@ -275,10 +276,10 @@ def create_app(test_config=None):
             return 'NONE'
 
     # grade update based on user response
-    @app.route('/updateUserGrade', methods=['POST'])
-    def update_user_grade():
-        req_data = request.get_json()
-        username = req_data['username']
+    # @app.route('/updateUserGrade', methods=['POST'])
+    def update_user_grade(username, grade_change):
+        # req_data = request.get_json()
+        # username = req_data['username']
         user = query_db('select * from users where username=?',
                         [username], one=True)
 
@@ -286,19 +287,19 @@ def create_app(test_config=None):
         total_correct = user['total_correct']
         total_incorrect = user['total_incorrect']
 
-        if req_data['grade_change'] == 'UPGRADE':
+        if grade_change == 'UPGRADE':
             difficulty_level += 1
             total_correct = 0
             total_incorrect = 0
-        elif req_data['grade_change'] == 'DOWNGRADE':
+        elif grade_change == 'DOWNGRADE':
             difficulty_level -= 1
             total_correct = 0
             total_incorrect = 0
 
         # else no change for no grade update by user
-
-        update_db('update users set difficulty_level=?,total_correct=?,total_incorrect=? where username = ?',
-                  (difficulty_level, total_correct, total_incorrect, username))
+        if grade_change != 'NONE':
+            update_db('update users set difficulty_level=?,total_correct=?,total_incorrect=? where username = ?',
+                      (difficulty_level, total_correct, total_incorrect, username))
         return 'Update Successful'
 
     # get attempted questiond for a user
