@@ -252,7 +252,7 @@ def create_app(test_config=None):
                 user_data['total_correct'], total_attempted)
             update_user_grade(username, grade_change)
 
-        response = jsonify({'index': next_index, 'grade_update': grade_change})
+        response = jsonify({'index': next_index})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
