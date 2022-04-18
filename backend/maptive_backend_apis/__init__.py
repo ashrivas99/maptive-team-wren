@@ -83,7 +83,7 @@ def create_app(test_config=None):
         user_info = request.get_json(force=True)
         req_username = user_info['username']
         req_difficulty_level = grade_to_difficulty_mapping.get(
-            str(user_info['grade']))
+            user_info['grade'])
 
         # below fields not needed as of now
         # categories = user_info['categories']
@@ -185,9 +185,11 @@ def create_app(test_config=None):
                             [username],
                             one=True)
             total_correct = int(user['total_correct']) + \
-                (1 if correct == True else 0)
+                (1 if correct else 0)
             total_incorrect = int(user['total_incorrect']) + \
-                (1 if correct == False else 0)
+                (1 if not correct else 0)
+            print("Total Correct:", total_correct,
+                  "Total Incorrect:", total_incorrect)
             update_db('update users set total_correct=?,total_incorrect=? where username = ?',
                       (total_correct, total_incorrect, username))
             print(query_db('select * from users'))  # debug
@@ -204,11 +206,14 @@ def create_app(test_config=None):
         correct = question_info['correct']
         username = question_info['username']
 
-        try:
-            store_submissions(question, correct, username)
-        except Exception as e:
-            print(f'Exception Occured {e}')
-            pass
+        # only store submission if questions were attempted
+        # don't do this for new user staring the flow
+        if question != 'None' or correct != 'None':
+            try:
+                store_submissions(question, correct, username)
+            except Exception as e:
+                print(f'Exception Occured {e}')
+                pass
 
         # get all correct questions attempted by user
         attempted_question_ids = query_db('select question_id from attempted_questions where username = ?',
@@ -242,9 +247,10 @@ def create_app(test_config=None):
             user_data['total_incorrect']
         # do this for every 10th question attempted or when no more valid questions left in current grade
         grade_change = "NONE"
-        if total_attempted % 10 == 0 or not valid_question_ids:
+        if total_attempted != 0 and total_attempted % 10 == 0 or not valid_question_ids:        # avoid division by 0
             grade_change = grade_reccomendation(
                 user_data['total_correct'], total_attempted)
+            update_user_grade(username, grade_change)
 
         response = jsonify({'index': next_index, 'grade_update': grade_change})
         response.headers.add('Access-Control-Allow-Origin', '*')
@@ -275,10 +281,7 @@ def create_app(test_config=None):
             return 'NONE'
 
     # grade update based on user response
-    @app.route('/updateUserGrade', methods=['POST'])
-    def update_user_grade():
-        req_data = request.get_json()
-        username = req_data['username']
+    def update_user_grade(username, grade_change):
         user = query_db('select * from users where username=?',
                         [username], one=True)
 
@@ -286,19 +289,19 @@ def create_app(test_config=None):
         total_correct = user['total_correct']
         total_incorrect = user['total_incorrect']
 
-        if req_data['grade_change'] == 'UPGRADE':
+        if grade_change == 'UPGRADE':
             difficulty_level += 1
             total_correct = 0
             total_incorrect = 0
-        elif req_data['grade_change'] == 'DOWNGRADE':
+        elif grade_change == 'DOWNGRADE':
             difficulty_level -= 1
             total_correct = 0
             total_incorrect = 0
 
         # else no change for no grade update by user
-
-        update_db('update users set difficulty_level=?,total_correct=?,total_incorrect=? where username = ?',
-                  (difficulty_level, total_correct, total_incorrect, username))
+        if grade_change != 'NONE':
+            update_db('update users set difficulty_level=?,total_correct=?,total_incorrect=? where username = ?',
+                      (difficulty_level, total_correct, total_incorrect, username))
         return 'Update Successful'
 
     # get attempted questiond for a user
