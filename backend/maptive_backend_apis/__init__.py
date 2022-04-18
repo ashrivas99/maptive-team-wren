@@ -2,22 +2,49 @@ import os
 import random
 import json
 import sqlite3
-from pprint import pprint
-
+import flask
 from flask import abort
-
 from flask import Flask, jsonify, make_response, request
 from collections import defaultdict
 
-import flask
-
+# global variables
 grades = ["1", "2", "3", "4", "5", "6", "7", "8", "G", "S", "A1", "A2"]
+grade_to_difficulty_mapping = {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "G": "9",
+    "S": "10",
+    "A1": "11",
+    "A2": "12"
+}
+difficulty_to_grade_mapping = {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5",
+    "6": "6",
+    "7": "7",
+    "8": "8",
+    "9": "G",
+    "10": "S",
+    "11": "A1",
+    "12": "A2"
+}
 gradeMappings = {
     "Geometry": "G",
     "Statistics": "S",
     "Algebra 1": "A1",
     "Algebra 2": "A2"
 }
+
+# flask app initialization
 
 
 def create_app(test_config=None):
@@ -36,29 +63,31 @@ def create_app(test_config=None):
         pass
 
     # get all users in DB
+
     @app.route('/getAllUsers', methods=['GET'])
     def getAllUsers():
-        user_dict = defaultdict(list)
-        # users_list = ''
+        users_dict = defaultdict(list)
         for user in query_db('select * from users'):
-            print(user['username'], 'has the id', user['id'])
-            # users_list = users_list+str(user['username'])+'\n'
-            user_dict['username'].append(user['username'])
-            print(user_dict)
-
-        return user_dict
+            users_dict[user['id']].append(user)
+            print(users_dict)
+        return users_dict
 
     # register new users
-    # add grade field
+    # get grade and username from UI - this method will be called when user enters username+grade and clicks submit
+    # OR when user completes questionnaire, grade is calculated, sent to UI and then username+grade is returned by UI
+    # no need to store questionnaire_filled flag in this case
+    # grade calculation via questionnaire is done in another method
+
     @app.route('/registerUser', methods=['POST'])
     def registerUser():
         user_info = request.get_json(force=True)
-
         req_username = user_info['username']
-        req_grade = user_info['grade']
-        categories = user_info['categories']
+        req_difficulty_level = grade_to_difficulty_mapping.get(
+            str(user_info['grade']))
 
-        categories_string = ','.join(categories)
+        # below fields not needed as of now
+        # categories = user_info['categories']
+        # categories_string = ','.join(categories)
 
         user = query_db('select * from users where username = ?',
                         [req_username],
@@ -69,9 +98,10 @@ def create_app(test_config=None):
             print('No such user')
             try:
                 insert_into_db(
-                    'insert into users(username, user_grade, user_categories, questionnaire_filled, current_category) values (?,?,?,?,?)',
-                    (req_username, req_grade, categories_string, 'False', categories[0]))
+                    'insert into users(username, difficulty_level, total_correct, total_incorrect) values (?,?,?,?)',
+                    (req_username, req_difficulty_level, 0, 0))
                 response = jsonify('New user added')
+
             except sqlite3.IntegrityError as e:
                 print('Error Occured: ', e)
                 abort(400)
@@ -80,11 +110,6 @@ def create_app(test_config=None):
             response = jsonify(req_username, 'has the id', user['id'])
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
-
-    # @app.route('/updateUser', methods=['POST'])
-    # def updateUser():
-    #     # TODO: After Monday Meeting
-    #     return None
 
     # get existing user
 
@@ -100,14 +125,11 @@ def create_app(test_config=None):
             return 'User does not exist'
         else:
             print(req_username, 'has the id', user['id'])
-        return {
-            'username': user['username'],
-            'user_grade': user['user_grade'],
-            'questionnaire_filled': user['questionnaire_filled']
-        }
+        return user
 
     # get json question data
-    @app.route('/question_data', methods=['GET'])
+
+    @app.route('/getQuestionData', methods=['GET'])
     def question_data():
         f = open('data_handling/data.json')
         data = json.load(f)
@@ -115,7 +137,7 @@ def create_app(test_config=None):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
-    # get json question data
+    # get json categories
     @app.route('/getCategories', methods=['POST'])
     def get_grade_categories():
         user_info = request.get_json(force=True)
@@ -135,7 +157,8 @@ def create_app(test_config=None):
         return response
 
     # get json questionnaire questions for new user
-    @app.route('/pick_questionnaire_questions', methods=['GET'])
+
+    @app.route('/pickQuestionnaireQuestions', methods=['GET'])
     def pick_questionnaire_questions():
         f = open('data_handling/data.json')
         data = json.load(f)
@@ -147,17 +170,34 @@ def create_app(test_config=None):
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
-    def store_correct_submissions(question, correct, username):
+    # method to store user responses in db
+
+    def store_submissions(question_id, correct, username):
         try:
-            insert_into_db(
-                'insert into attempted_questions(username, question_id, answered_correctly) values (?,?,?)',
-                (username, question['skillno'], correct))
+            # update correct answers into attempted_questions table
+            if correct:
+                insert_into_db(
+                    'insert into attempted_questions(username, question_id, answered_correctly) values (?,?,?)',
+                    (username, question_id, correct))
+
+            # update total_correct and total_incorrect answers in users table
+            user = query_db('select * from users where username = ?',
+                            [username],
+                            one=True)
+            total_correct = int(user['total_correct']) + \
+                (1 if correct == True else 0)
+            total_incorrect = int(user['total_incorrect']) + \
+                (1 if correct == False else 0)
+            update_db('update users set total_correct=?,total_incorrect=? where username = ?',
+                      (total_correct, total_incorrect, username))
+            print(query_db('select * from users'))  # debug
+
         except sqlite3.IntegrityError as e:
             print('Error Occured: ', e)
             pass
 
     # get json question choice
-    @app.route('/pick_question', methods=['POST'])
+    @app.route('/pickQuestion', methods=['POST'])
     def pick_question():
         question_info = request.get_json(force=True)
         question = question_info['question']
@@ -165,93 +205,128 @@ def create_app(test_config=None):
         username = question_info['username']
 
         try:
-            if correct:
-                store_correct_submissions(question, correct, username)
+            store_submissions(question, correct, username)
         except Exception as e:
             print(f'Exception Occured {e}')
             pass
 
-        # # TODO(user model people): Do something with this info.
-        #
-        # Only return the question if the user has not gotten it correct
-        avoid_question_query = query_db('select question_id from attempted_questions where username = ?',
-                                      [username])
+        # get all correct questions attempted by user
+        attempted_question_ids = query_db('select question_id from attempted_questions where username = ?',
+                                          [username])
 
-        avoid_questions_dict = {}
-        for idx in avoid_question_query:
-            avoid_questions_dict[idx['question_id']] = 1
+        attempted_questions_list = [int(item['question_id'])
+                                    for item in attempted_question_ids]
 
+        user_data = query_db(
+            'select * from users where username = ?', [username], one=True)
+
+        # get user difficulty level
+        user_difficulty_level = int(user_data['difficulty_level'])
+        print(user_difficulty_level)
+
+        # get all question data
         f = open('data_handling/data.json')
         data = json.load(f)
-        new_index = random.randint(0, len(data))
 
-        response = jsonify({'index': new_index})
+        # get all question ids of current difficulty level of user except the ones already attempted
+        valid_question_ids = []
+        for index, item in enumerate(data):
+            if (item['difficulty'] == user_difficulty_level) and (get_question_id(item['skillno']) not in attempted_questions_list):
+                valid_question_ids.append(index)
+        if valid_question_ids:
+            next_index = random.choice(valid_question_ids)
+        else:
+            next_index = random.choice(valid_question_ids)
+        # grade checking logic
+        total_attempted = user_data['total_correct'] + \
+            user_data['total_incorrect']
+        # do this for every 10th question attempted or when no more valid questions left in current grade
+        grade_change = "NONE"
+        if total_attempted % 10 == 0 or not valid_question_ids:
+            grade_change = grade_reccomendation(
+                user_data['total_correct'], total_attempted)
+
+        response = jsonify({'index': next_index, 'grade_update': grade_change})
         response.headers.add('Access-Control-Allow-Origin', '*')
         return response
 
-    def grade_reccomender_for_category(username):
-        # TODO:
+    # get question id from skillno string
+
+    def get_question_id(skill_no_str):
+        keyword = 'skillno='
+        _, _, after_keyword = skill_no_str.partition(keyword)
+        return int(after_keyword)
+
+    # grade reccomendation logic
+
+    def grade_reccomendation(total_correct, total_attempted):
         # This would recommend a newer or same grade depending on the win/loss rate.
         # If the user agrees to the next grade then the front end can request a question for grade+1 and category
         # we would also update the current grade and category of the user in the users table
-        current_user = query_db('select * from users where username = ?',
-                                username,
-                                one=True)
-
-        current_user_grade = current_user['user_grade']
-        current_user_category = current_user['current_category']
-
-        curruser_model_data = query_db(
-            'select * from user_model where username = ? and category_attempted =? and grade_attempted =?',
-            [username, current_user_category, current_user_grade],
-            one=True)
-
-        total_correct = curruser_model_data['total_correct']
-        total_wrong = curruser_model_data['total_wrong']
-
-        total_attempted = total_correct + total_wrong
         win_rate = total_correct / total_attempted
-        loss_rate = total_wrong / total_attempted
 
         if win_rate > 0.8:
-            print('reccomend next grade')
+            return 'UPGRADE'
 
         elif win_rate < 0.25:
-            print('recommend previous grade quesiton of same category')
+            return 'DOWNGRADE'
 
         else:
-            print('Do nothing')
+            return 'NONE'
 
-    # below api not needed? review
+    # grade update based on user response
+    @app.route('/updateUserGrade', methods=['POST'])
+    def update_user_grade():
+        req_data = request.get_json()
+        username = req_data['username']
+        user = query_db('select * from users where username=?',
+                        [username], one=True)
 
-    # # Assuming front-end will send the username again, we can't have dups for now
-    # @app.route('/questionnaire_done', methods=['POST'])
-    # def questionnaire_done():
-    #     form_username = request.form.get('username')
+        difficulty_level = user['difficulty_level']
+        total_correct = user['total_correct']
+        total_incorrect = user['total_incorrect']
 
-    #     # function to add to JSON
-    #     with open('./user_data.json', 'r') as file:
-    #         user_json_db = json.load(file)
+        if req_data['grade_change'] == 'UPGRADE':
+            difficulty_level += 1
+            total_correct = 0
+            total_incorrect = 0
+        elif req_data['grade_change'] == 'DOWNGRADE':
+            difficulty_level -= 1
+            total_correct = 0
+            total_incorrect = 0
 
-    #     for user in user_json_db:
-    #         if user['user_name'] == form_username:
-    #             # Update the entry within the username of questionaire yesx
-    #             user['questionnaire_filled'] = True
-    #         print(user_json_db)
-    #         print(type(user_json_db))
+        # else no change for no grade update by user
 
-    #         with open('./user_data.json', 'w') as file:
-    #             file.seek(0)
-    #             json.dump(user_json_db, file, indent=4)
+        update_db('update users set difficulty_level=?,total_correct=?,total_incorrect=? where username = ?',
+                  (difficulty_level, total_correct, total_incorrect, username))
+        return 'Update Successful'
 
-    #         # # Sets file's current position at offset.
-    #         # file.seek(0)
-    #         # # convert back to json.
-    #         # json.dump(file_data, file, indent=4)
-    #     return 'Questionnaire Done'
+    # get attempted questiond for a user
+    # for debugging
+
+    @ app.route('/getAttemptedQuestions', methods=['POST'])
+    def attempted_questions():
+        req = request.get_json()
+        username = req['username']
+        user_attempted_questions = query_db(
+            'select * from attempted_questions where username=?', [username])
+        print(user_attempted_questions)
+        if user_attempted_questions is None:
+            return 'No questions attempted'
+
+        response = jsonify(user_attempted_questions)
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        return response
+
+    def dict_factory(cursor, row):
+        d = {}
+        for idx, col in enumerate(cursor.description):
+            d[col[0]] = row[idx]
+        return d
 
     def query_db(query, args=(), one=False):
         conn = db.get_db()
+        conn.row_factory = dict_factory
         cur = conn.execute(query, args)
         rv = cur.fetchall()
         conn.commit()
@@ -259,6 +334,13 @@ def create_app(test_config=None):
         return (rv[0] if rv else None) if one else rv
 
     def insert_into_db(query, args=()):
+        conn = db.get_db()
+        conn.row_factory = dict_factory
+        cur = conn.execute(query, args)
+        conn.commit()
+        cur.close()
+
+    def update_db(query, args=()):
         conn = db.get_db()
         cur = conn.execute(query, args)
         conn.commit()
