@@ -83,7 +83,7 @@ def create_app(test_config=None):
         user_info = request.get_json(force=True)
         req_username = user_info['username']
         req_difficulty_level = grade_to_difficulty_mapping.get(
-            str(user_info['grade']))
+            user_info['grade'])
 
         # below fields not needed as of now
         # categories = user_info['categories']
@@ -206,11 +206,14 @@ def create_app(test_config=None):
         correct = question_info['correct']
         username = question_info['username']
 
-        try:
-            store_submissions(question, correct, username)
-        except Exception as e:
-            print(f'Exception Occured {e}')
-            pass
+        # only store submission if questions were attempted
+        # don't do this for new user staring the flow
+        if question != 'None' or correct != 'None':
+            try:
+                store_submissions(question, correct, username)
+            except Exception as e:
+                print(f'Exception Occured {e}')
+                pass
 
         # get all correct questions attempted by user
         attempted_question_ids = query_db('select question_id from attempted_questions where username = ?',
