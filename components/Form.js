@@ -62,7 +62,7 @@ export default function Form() {
       selectedCats.push(cat);
       setSelectedCats(selectedCats)
       const btn = document.getElementById(cat);
-      btn.style.backgroundColor = 'green';
+      btn.style.backgroundColor = '#39be25';
     }
   }
 
@@ -74,7 +74,7 @@ export default function Form() {
     );
   }
 
-  function stuff(value) {
+  function selectGrade(value) {
     setGrade(value)
     fetch("http://localhost:5000/getCategories", {
       method: "POST",
@@ -112,7 +112,7 @@ export default function Form() {
     else {
       return (
         <div>
-          <Listbox id="lb" value={grade} onChange={(value) => stuff(value)}>
+          <Listbox id="lb" value={grade} onChange={(value) => selectGrade(value)}>
             {({ open }) => (
               <>
                 <Listbox.Label className="block text-sm font-medium text-gray-700">
