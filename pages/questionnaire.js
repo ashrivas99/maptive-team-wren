@@ -134,7 +134,7 @@ export default function Questionnaire() {
     username = localStorage.getItem("user");
     setLoading(true);
     if (numQues == 0) {
-      fetch("http://localhost:5000/pick_questionnaire_questions", {
+      fetch("http://localhost:5000/pickQuestionnaireQuestions", {
         method: "GET",
         mode: "cors",
       })

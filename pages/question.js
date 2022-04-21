@@ -7,11 +7,17 @@ export default function Question() {
     let [displayAnswer, setDisplayAnswer] = useState("false");
     let [correct, setCorrect] = useState("false");
     let [answer, setAnswer] = useState("A");
-    let username = localStorage.getItem("user")
+    const [userName, setUserName] = useState(null)
+
+    useEffect(() => {
+        // Perform localStorage action
+        setUserName(localStorage.getItem("user"))
+      }, [])
+
 
     function changeQuestion() {
         setDisplayAnswer(false)
-        fetch('http://localhost:5000/pick_question', {
+        fetch('http://localhost:5000/pickQuestionnaireQuestions', {
             method: 'POST',
             mode: 'cors',
             body: JSON.stringify(
@@ -151,7 +157,7 @@ export default function Question() {
     useEffect(() => {
         setLoading(true)
         if (data == null) {
-            fetch('http://localhost:5000/question_data', {
+            fetch('http://localhost:5000/questionData', {
                 method: 'GET',
                 mode: 'cors'
             })

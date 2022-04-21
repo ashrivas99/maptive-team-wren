@@ -31,7 +31,7 @@ export default function Form() {
 
     let userData = {
       username: name,
-      grade: parseInt(grade),
+      grade: grade,
       categories: selectedCats
     };
 
@@ -76,7 +76,7 @@ export default function Form() {
 
   function selectGrade(value) {
     setGrade(value)
-    fetch("http://localhost:5000/getCategories", {
+    fetch("http://localhost:5000/getGradeCategories", {
       method: "POST",
       mode: "cors",
       body: JSON.stringify({ "grade": value }),

@@ -65,7 +65,7 @@ def create_app(test_config=None):
     # get all users in DB
 
     @app.route('/getAllUsers', methods=['GET'])
-    def getAllUsers():
+    def get_all_users():
         users_dict = defaultdict(list)
         for user in query_db('select * from users'):
             users_dict[user['id']].append(user)
@@ -79,7 +79,7 @@ def create_app(test_config=None):
     # grade calculation via questionnaire is done in another method
 
     @app.route('/registerUser', methods=['POST'])
-    def registerUser():
+    def register_user():
         user_info = request.get_json(force=True)
         req_username = user_info['username']
         req_difficulty_level = grade_to_difficulty_mapping.get(
@@ -114,7 +114,7 @@ def create_app(test_config=None):
     # get existing user
 
     @app.route('/fetchUser', methods=['POST'])
-    def fetchUser():
+    def fetch_user():
         user_info = request.get_json()
         req_username = user_info['username']
         user = query_db('select * from users where username = ?',
@@ -129,7 +129,7 @@ def create_app(test_config=None):
 
     # get json question data
 
-    @app.route('/getQuestionData', methods=['GET'])
+    @app.route('/questionData', methods=['GET'])
     def question_data():
         f = open('data_handling/data.json')
         data = json.load(f)
@@ -138,7 +138,7 @@ def create_app(test_config=None):
         return response
 
     # get json categories
-    @app.route('/getCategories', methods=['POST'])
+    @app.route('/getGradeCategories', methods=['POST'])
     def get_grade_categories():
         user_info = request.get_json(force=True)
         req_grade = user_info['grade']
