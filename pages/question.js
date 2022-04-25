@@ -17,7 +17,7 @@ export default function Question() {
 
     function changeQuestion() {
         setDisplayAnswer(false)
-        fetch('http://localhost:5000/pickQuestionnaireQuestions', {
+        fetch('http://localhost:5000/pickQuestion', {
             method: 'POST',
             mode: 'cors',
             body: JSON.stringify(
@@ -154,6 +154,7 @@ export default function Question() {
         setLoading(false)
     }
 
+    // All the questions that will be asked
     useEffect(() => {
         setLoading(true)
         if (data == null) {
