@@ -325,12 +325,10 @@ def create_app(test_config=None):
             if len(categories_dict.keys()) == len(user_initial_category_list):
                 have_passed_all_categories = True
                 for idx, init_cat in enumerate(user_initial_category_list):
+                    if init_cat not in categories_dict.keys():
+                        continue
                     correct_answers = categories_dict[init_cat][0]
                     wrong_answers = categories_dict[init_cat][1]
-                    # print('correct_answers is: ', correct_answers)
-                    # print('wrong_answers is: ', wrong_answers)
-                    # print('type of correct_answers is: ', type(correct_answers))
-                    # print('type of wrong_answers is: ', type(wrong_answers))
                     score = correct_answers / (correct_answers + wrong_answers)
 
                     if score < 0.6:
@@ -405,6 +403,7 @@ def create_app(test_config=None):
                         (str(categories_dict), username, user_difficulty_level),
                     )
 
+                    # pick next question
                     updated_correct_question_ids = query_db(
                         "select question_id from correct_questions where username = ?", [username])
                     updated_currUser_correctQuestions = [
@@ -464,87 +463,87 @@ def create_app(test_config=None):
                                 (str(categories_dict), username),
                             )
                         # update user table
-                    if passed_all_categories and failed_category_count < 2:
-                        new_difficulty_level = user_difficulty_level + \
-                            1 if user_difficulty_level < 10 else print(
-                                "Ran of difficulty levels")
+                if passed_all_categories or failed_category_count < 2:
+                    new_difficulty_level = user_difficulty_level + \
+                        1 if user_difficulty_level < 10 else print(
+                            "Ran of difficulty levels")
 
-                        new_diffculty_initial_cat = {}
-                        all_categories_new_difficulty = get_categories(
-                            new_difficulty_level)
+                    new_diffculty_initial_cat = {}
+                    all_categories_new_difficulty = get_categories(
+                        new_difficulty_level)
 
-                        for cat in all_categories_new_difficulty:
-                            if cat in user_initial_category_list:
-                                new_diffculty_initial_cat[cat] = [
-                                    0, 0, "notPass"]
-                            else:
-                                new_diffculty_initial_cat[random.choice(user_initial_category_list)] = [
-                                    0, 0, "notPass"]
+                    for cat in user_initial_category_list:
+                        if cat in all_categories_new_difficulty:
+                            new_diffculty_initial_cat[cat] = [
+                                0, 0, "notPass"]
+                        else:
+                            new_diffculty_initial_cat[random.choice(all_categories_new_difficulty)] = [
+                                0, 0, "notPass"]
 
-                        # set new difficulty level and categories
-                        update_db(
-                            "update users SET difficulty_level=?, categories=? where username = ?",
-                            (new_difficulty_level, str(
-                                new_diffculty_initial_cat), username),
+                    # set new difficulty level and categories
+                    update_db(
+                        "update users SET difficulty_level=?, categories=? where username = ?",
+                        (new_difficulty_level, str(
+                            new_diffculty_initial_cat), username),
+                    )
+
+                    # select next question
+                    updated_correct_question_ids = query_db(
+                        "select question_id from correct_questions where username = ?", [username])
+                    updated_currUser_correctQuestions = [
+                        item["question_id"] for item in updated_correct_question_ids]
+
+                    for index, item in enumerate(data):
+                        if ((item["difficulty"] == new_difficulty_level)
+                            and (
+                            item["category"] in new_diffculty_initial_cat
+                            and new_diffculty_initial_cat[item["category"]][2] == "notPass"
                         )
+                                and (item["skillno"] not in updated_currUser_correctQuestions)):
+                            next_index = index
+                            break
 
-                        # select next question
-                        updated_correct_question_ids = query_db(
-                            "select question_id from correct_questions where username = ?", [username])
-                        updated_currUser_correctQuestions = [
-                            item["question_id"] for item in updated_correct_question_ids]
+                else:
+                    # downgade user if grade >1
+                    delete_from_db("delete from correct_questions where username = ? AND difficulty_level = ?",
+                                   (username, user_difficulty_level))
 
-                        for index, item in enumerate(data):
-                            if ((item["difficulty"] == new_difficulty_level)
-                                and (
-                                item["category"] in new_diffculty_initial_cat
-                                and new_diffculty_initial_cat[item["category"]][2] == "notPass"
-                            )
-                                    and (item["skillno"] not in updated_currUser_correctQuestions)):
-                                next_index = index
-                                break
+                    new_difficulty_level = user_difficulty_level - \
+                        1 if user_difficulty_level > 1 else 1
 
-                    else:
-                        # downgade user if grade >1
-                        delete_from_db("delete from correct_questions where username = ? AND difficulty_level = ?",
-                                       (username, user_difficulty_level))
+                    new_categories_dict = {}
 
-                        new_difficulty_level = user_difficulty_level - \
-                            1 if user_difficulty_level > 1 else 1
+                    # get categories iof new difficulty level
+                    categories_of_new_difficulty_level = get_categories(
+                        new_difficulty_level)
 
-                        new_categories_dict = {}
+                    for cat in user_initial_category_list:
+                        if cat in categories_of_new_difficulty_level:
+                            new_categories_dict[cat] = [0, 0, "notPass"]
+                        else:
+                            new_categories_dict[random.choice(categories_of_new_difficulty_level)] = [
+                                0, 0, "notPass"]
 
-                        # get categories iof new difficulty level
-                        categories_of_new_difficulty_level = get_categories(
-                            new_difficulty_level)
+                    update_db(
+                        "update users SET difficulty_level=?, categories=? where username = ?",
+                        (new_difficulty_level, str(
+                            new_categories_dict), username),
+                    )
 
-                        for cat in user_initial_category_list:
-                            if cat in categories_of_new_difficulty_level:
-                                new_categories_dict[cat] = [0, 0, "notPass"]
-                            else:
-                                new_categories_dict[random.choice(categories_of_new_difficulty_level)] = [
-                                    0, 0, "notPass"]
+                    updated_correct_question_ids = query_db(
+                        "select question_id from correct_questions where username = ?", [username])
+                    updated_currUser_correctQuestions = [
+                        item["question_id"] for item in updated_correct_question_ids]
 
-                        update_db(
-                            "update users SET difficulty_level=?, categories=? where username = ?",
-                            (new_difficulty_level, str(
-                                new_categories_dict), username),
+                    for index, item in enumerate(data):
+                        if ((item["difficulty"] == user_difficulty_level)
+                            and (
+                            item["category"] in new_categories_dict
+                            and new_categories_dict[item["category"]][2] == "notPass"
                         )
-
-                        updated_correct_question_ids = query_db(
-                            "select question_id from correct_questions where username = ?", [username])
-                        updated_currUser_correctQuestions = [
-                            item["question_id"] for item in updated_correct_question_ids]
-
-                        for index, item in enumerate(data):
-                            if ((item["difficulty"] == user_difficulty_level)
-                                and (
-                               item["category"] in new_categories_dict
-                               and new_categories_dict[item["category"]][2] == "notPass"
-                               )
-                                    and (item["skillno"] not in updated_currUser_correctQuestions)):
-                                next_index = index
-                                break
+                                and (item["skillno"] not in updated_currUser_correctQuestions)):
+                            next_index = index
+                            break
 
         #  GRADE PICKING LOGIC
         total_attempted = user_data["total_correct"] + \
@@ -575,6 +574,10 @@ def create_app(test_config=None):
                     else:
                         print("Failing user in category: ", each_cat)
                         categories_dict[each_cat][2] = "notPass"
+                        update_db(
+                            "update users SET categories=? where username = ?",
+                            (str(categories_dict), username),
+                        )
                         has_failed_initial_cat = True
                         break
 
@@ -659,12 +662,22 @@ def create_app(test_config=None):
             for each_cat in categories_dict:
                 total_attempted_per_category = categories_dict[each_cat][0] + \
                     categories_dict[each_cat][1]
+                if total_attempted_per_category == 0:
+                    continue
                 category_score = categories_dict[each_cat][0] / \
                     total_attempted_per_category
                 if category_score > 0.4:
                     categories_dict[each_cat][2] = "pass"
+                    update_db(
+                        "update users SET categories=? where username = ?",
+                        (str(categories_dict), username),
+                    )
                 else:
                     categories_dict[each_cat][2] = "notPass"
+                    update_db(
+                        "update users SET categories=? where username = ?",
+                        (str(categories_dict), username),
+                    )
                     failed_cat_count += 1
                     if failed_cat_count >= 2:
                         break
@@ -725,12 +738,12 @@ def create_app(test_config=None):
                 all_categories_new_difficulty = get_categories(
                     new_difficulty_level)
 
-                for cat in all_categories_new_difficulty:
-                    if cat in user_initial_category_list:
+                for cat in user_initial_category_list:
+                    if cat in all_categories_new_difficulty:
                         new_diffculty_initial_cat[cat] = [
                             0, 0, "notPass"]
                     else:
-                        new_diffculty_initial_cat[random.choice(user_initial_category_list)] = [
+                        new_diffculty_initial_cat[random.choice(all_categories_new_difficulty)] = [
                             0, 0, "notPass"]
 
                 new_total_correct = 0
