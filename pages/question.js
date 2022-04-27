@@ -26,8 +26,11 @@ export default function Question() {
       }),
     })
       .then((res) => res.json())
-      .then((data) => {
-        setIndex(data.index);
+      .then((qdata) => {
+        setIndex(qdata.index);
+        if (qdata.index >=0) {
+          createQuestion(data)
+        }
       });
   }
 
