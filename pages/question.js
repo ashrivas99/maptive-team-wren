@@ -1,26 +1,25 @@
 import { React, useState, useEffect } from "react";
 export default function Question() {
   const [data, setData] = useState(null);
-  const [isLoading, setLoading] = useState(false);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(-1);
   const answers = ["A", "B", "C", "D"];
   let [displayAnswer, setDisplayAnswer] = useState("false");
   let [correct, setCorrect] = useState("false");
   let [answer, setAnswer] = useState("A");
-  const [userName, setUserName] = useState(null);
+  const userName = localStorage.getItem("user");
 
-  useEffect(() => {
-    // Perform localStorage action
-    setUserName(localStorage.getItem("user"));
-  }, []);
 
   function changeQuestion() {
     setDisplayAnswer(false);
+    let q = null
+    if (index >=0) {
+      q = data[index]
+    }
     fetch("http://localhost:5000/pickQuestion", {
       method: "POST",
       mode: "cors",
       body: JSON.stringify({
-        question: data[index],
+        question: q,
         correct: correct,
         username: userName,
       }),
@@ -28,7 +27,7 @@ export default function Question() {
       .then((res) => res.json())
       .then((qdata) => {
         setIndex(qdata.index);
-        if (qdata.index >=0) {
+        if (index >=0) {
           createQuestion(data)
         }
       });
@@ -173,12 +172,10 @@ export default function Question() {
     if (questions[index].mcq["D"]["correct"] == true) {
       setAnswer("D");
     }
-    setLoading(false);
   }
 
   // All the questions that will be asked
   useEffect(() => {
-    setLoading(true);
     if (data == null) {
       fetch("http://localhost:5000/questionData", {
         method: "GET",
@@ -187,14 +184,13 @@ export default function Question() {
         .then((res) => res.json())
         .then((data) => {
           setData(data.data);
-          createQuestion(data.data);
+          changeQuestion();
         });
     } else {
       createQuestion(data);
     }
   }, []);
 
-  if (isLoading) return <p>Loading...</p>;
   if (!data) return <p>No profile data</p>;
 
   return (
@@ -225,3 +221,4 @@ export default function Question() {
     </div>
   );
 }
+
