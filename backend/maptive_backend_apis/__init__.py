@@ -267,6 +267,7 @@ def create_app(test_config=None):
         correct = question_info["correct"]
         username = question_info["username"]
 
+        question_category = question["category"]
         user = query_db("select * from users where username = ?",
                         [username], one=True)
 

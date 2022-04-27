@@ -1,25 +1,26 @@
 import { React, useState, useEffect } from "react";
 export default function Question() {
-  let [data, setData] = useState(null);
-  const [index, setIndex] = useState(-1);
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(false);
+  const [index, setIndex] = useState(0);
   const answers = ["A", "B", "C", "D"];
   let [displayAnswer, setDisplayAnswer] = useState("false");
   let [correct, setCorrect] = useState("false");
   let [answer, setAnswer] = useState("A");
-  const [userName, setUserName] = localStorage.getItem("user");
+  const [userName, setUserName] = useState(null);
 
+  useEffect(() => {
+    // Perform localStorage action
+    setUserName(localStorage.getItem("user"));
+  }, []);
 
   function changeQuestion() {
     setDisplayAnswer(false);
-    let q = null
-    if (index >=0) {
-      q = data[index]
-    }
     fetch("http://localhost:5000/pickQuestion", {
       method: "POST",
       mode: "cors",
       body: JSON.stringify({
-        question: q,
+        question: data[index],
         correct: correct,
         username: userName,
       }),
@@ -159,9 +160,7 @@ export default function Question() {
     );
   }
 
-  function createQuestion(questions,index) {
-    console.log(index)
-    console.log(questions.length)
+  function createQuestion(questions) {
     if (questions[index].mcq["A"]["correct"] == true) {
       setAnswer("A");
     }
@@ -174,10 +173,12 @@ export default function Question() {
     if (questions[index].mcq["D"]["correct"] == true) {
       setAnswer("D");
     }
+    setLoading(false);
   }
 
   // All the questions that will be asked
   useEffect(() => {
+    setLoading(true);
     if (data == null) {
       fetch("http://localhost:5000/questionData", {
         method: "GET",
@@ -186,14 +187,14 @@ export default function Question() {
         .then((res) => res.json())
         .then((data) => {
           setData(data.data);
-          data = data.data
-          changeQuestion();
+          createQuestion(data.data);
         });
     } else {
-      createQuestion(data, index);
+      createQuestion(data);
     }
   }, []);
 
+  if (isLoading) return <p>Loading...</p>;
   if (!data) return <p>No profile data</p>;
 
   return (
