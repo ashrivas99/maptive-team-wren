@@ -27,7 +27,7 @@ export default function Question() {
       .then((res) => res.json())
       .then((qdata) => {
         setIndex(qdata.index);
-        if (index >=0) {
+        if (qdata.index >=0) {
           createQuestion(data)
         }
       });
