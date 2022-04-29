@@ -28,7 +28,7 @@ export default function Question() {
       .then((qdata) => {
         setIndex(qdata.index);
         if (index >=0) {
-          createQuestion(data)
+          createQuestion(data, qdata.index)
         }
       });
   }
@@ -159,17 +159,17 @@ export default function Question() {
     );
   }
 
-  function createQuestion(questions) {
-    if (questions[index].mcq["A"]["correct"] == true) {
+  function createQuestion(questions, ind) {
+    if (questions[ind].mcq["A"]["correct"] == true) {
       setAnswer("A");
     }
-    if (questions[index].mcq["B"]["correct"] == true) {
+    if (questions[ind].mcq["B"]["correct"] == true) {
       setAnswer("B");
     }
-    if (questions[index].mcq["C"]["correct"] == true) {
+    if (questions[ind].mcq["C"]["correct"] == true) {
       setAnswer("C");
     }
-    if (questions[index].mcq["D"]["correct"] == true) {
+    if (questions[ind].mcq["D"]["correct"] == true) {
       setAnswer("D");
     }
   }
@@ -187,7 +187,7 @@ export default function Question() {
           changeQuestion();
         });
     } else {
-      createQuestion(data);
+      createQuestion(data, index);
     }
   }, []);
 
