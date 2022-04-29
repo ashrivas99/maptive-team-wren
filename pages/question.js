@@ -73,7 +73,11 @@ export default function Question() {
 
   function checkAnswer(attempt) {
     setDisplayAnswer(true);
-    correct = setCorrect(attempt == answer);
+    correct = false;
+    if (attempt == answer) {
+      correct = true;
+    }
+    setCorrect(correct);
   }
 
   function Answer() {
